@@ -1,7 +1,7 @@
 function displayWindowSize()
 {
-  var dropdownNames = document.querySelectorAll(".D_name");
-  var dropdownMenus = document.querySelectorAll(".D_menu");
+  var dropdownNames = document.querySelectorAll(".Dropdown_name");
+  var dropdownMenus = document.querySelectorAll(".dropdown-menu");
 
   dropdownNames.forEach(function(dropdownName, index) {
     dropdownName.addEventListener("mouseover", function() {
