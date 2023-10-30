@@ -186,9 +186,10 @@ p{
     background:none;
     border: none;
   }
-  .dropdown-toggle-split{
-   float: left;
-   margin-right: 10rem;
+  .dropdown-toggle-split {
+    float: left;
+    margin-right: 0; 
+    margin-left: -105px; 
   }
   .dropdown-item:hover, .dropdown-item:focus{
     background: none;
@@ -298,4 +299,163 @@ p{
   
    
   }
+  /* carousel */
+
+  .carousel_width {
+    width: 100%;
+    height: 350px;
+  }
+  .c_item{
+    height: 350px;
+  }
+  .c_image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+  }
+
+  .carousel-indicators .active {
+    background-color: var(--color-accent); /* Change to your desired color */
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
     
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+     width: 50px;
+   }
+    
+  
+
+  .carousel-control-prev:hover .carousel-control-prev-icon,
+  .carousel-control-next:hover .carousel-control-next-icon
+  {
+    font-size: 2rem;
+    filter: invert(32%) sepia(77%) saturate(2889%) hue-rotate(342deg) brightness(97%) contrast(92%);
+  }
+  
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover
+  {
+    background-color: rgba(0, 0, 0, 0.6);
+
+  }
+
+  .caption_header {
+    height: 225px; /* For medium and large screens */
+    max-height: 350px; /* Ensure it doesn't exceed this height */
+    width: 100%; /* For medium and large screens */
+    max-width: 100%; /* Ensure it doesn't exceed this width */
+    margin: 0; /* Center the container horizontally */
+    display: flex; /* Enable flexbox layout */
+    justify-content: center; /* Center the h1 horizontally */
+    align-items: center; /* Center the h1 vertically */
+  }
+
+
+  .caption_header h1{
+     padding: 0;
+     margin: 0;
+     font-size: 4rem;
+     text-align: center;
+     text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97998px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.5136px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px;
+    }
+    .c_caption p{
+      font-size: 1.5rem;
+      text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97998px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.5136px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px;
+    }
+ 
+
+  @media (min-width: 576px) and (max-width: 1700px) {
+    
+    .carousel_width {
+      width: 80%;
+      height: 450px;
+    }
+    .c_item{
+      height: 450px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      width: 3rem;
+      height: 3rem;
+    }
+    .carousel-control-prev:hover .carousel-control-prev-icon,
+    .carousel-control-next:hover .carousel-control-next-icon
+    {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+     width: 100px;
+   }
+
+   .caption_header {
+    height: 300px; /* For medium and large screens */
+    max-height: 450px; /* Ensure it doesn't exceed this height */
+   }
+
+
+    .caption_header h1{
+       font-size: 6rem;
+      }
+
+    .c_caption p{
+       font-size: 3rem;
+      }
+
+
+
+  }
+  
+  
+  
+  @media (min-width: 1701px) {
+    .carousel_width {
+      width: 70%;
+      height: 450px;
+    }
+    .c_item{
+      height: 450px;
+    }
+
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      width: 3rem;
+      height: 3rem;
+    }
+    .carousel-control-prev:hover .carousel-control-prev-icon,
+    .carousel-control-next:hover .carousel-control-next-icon
+    {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+     width: 120px;
+   }
+
+   .caption_header {
+    height: 300px; /* For medium and large screens */
+    max-height: 450px; /* Ensure it doesn't exceed this height */
+   }
+
+    .caption_header h1{
+      font-size: 10rem;
+     }
+
+   .c_caption p{
+    font-size: 4rem;
+     }
+   
+  }

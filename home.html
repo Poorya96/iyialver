@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Iyialver</title>
 </head>
 <body>
+  <!-- navbar -->
   <div class="nav">
     <div class="container text-center mt-2">
       <div class="grid_container">
@@ -148,6 +150,67 @@
       </div>
       </div>  
   </div>
+</div>
+
+  <!-- Carousel -->
+  <!-- Container for centering -->
+<div class="d-flex justify-content-center pt-3 pt-lg-5">
+  <!-- Carousel -->
+  <div class="p-3 m-0 border-0 carousel_width ">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade"  data-bs-touch="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner ">
+        <div class="carousel-item active c_item">
+          <a href="#">
+            <img src="images/1.jpg" class="d-block w-100 rounded-5 c_image" alt="Slide 1">
+            <div class="carousel-caption d-md-block c_caption ">
+              <div class="caption_header">
+                <h1>Galaxy A04s</h1>
+              </div>
+              <p>مقرون به صرفه‌ترین گوشی سامسونگ</p>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item c_item">
+          <a href="#">
+            <img src="images/2.jpg" class="d-block w-100 rounded-5 c_image" alt="Slide 2">
+            <div class="carousel-caption d-md-block c_caption">
+              <div class="caption_header">
+              <h1>چارشنبه‌ها بازی</h1>
+            </div>
+              <p>روزی شگفت‌انگیز برای بازیکن‌ها</p>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item c_item">
+          <a href="#">
+            <img src="images/3.jpg" class="d-block w-100 rounded-5 c_image" alt="Slide 3">
+            <div class="carousel-caption d-md-block c_caption">
+              <div class="caption_header">
+              <h1>انتخاب براساس پرفروش‌ها</h1>
+            </div>
+              <p>کالاهای الکترونیک پرفروش</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <button class="carousel-control-prev rounded-start-5" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next rounded-end-5" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src='js/main.js'></script>
