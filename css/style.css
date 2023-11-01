@@ -236,6 +236,7 @@ p {
     border-radius: 25px;
     background-color: #fff;
     box-shadow: -2px 16px 26px 4px rgba(0, 0, 0, 0.2);
+    list-style: none;
   }
   .dropdown-item {
     padding-top: 1.5rem;
