@@ -1,8 +1,12 @@
 {
-    "workbench.colorCustomizations": {
-        "activityBar.background": "#182F43",
-        "titleBar.activeBackground": "#22425E",
-        "titleBar.activeForeground": "#FAFCFD"
-    },
-    "liveServer.settings.port": 5555
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#182F43",
+    "titleBar.activeBackground": "#22425E",
+    "titleBar.activeForeground": "#FAFCFD"
+  },
+  "liveServer.settings.port": 5555,
+  "console-ninja.toolsToEnableSupportAutomaticallyFor": {
+    "live-server-extension": true,
+    "live-preview-extension": true
+  }
 }
