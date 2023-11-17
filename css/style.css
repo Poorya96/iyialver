@@ -891,3 +891,26 @@ p {
     width: 100%;
   }
 }
+/* footer */
+.footer {
+  background-color: #f8f9fb;
+}
+.footer_links,
+.footer_about_p2 {
+  display: none;
+}
+.footer_about_p1 {
+  text-align: center;
+}
+.footer_about_p1 span {
+  color: var(--color-accent-hover);
+}
+@media (min-width: 700px) {
+  .footer_links,
+  .footer_about_p2 {
+    display: block;
+  }
+  .footer_about_p1 {
+    text-align: right;
+  }
+}
