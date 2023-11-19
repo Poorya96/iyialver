@@ -1,0 +1,204 @@
+:root {
+  --color-primary: #324376;
+  --color-secondary: #586ba4;
+  --color-background: #fdfffc;
+  --color-accent: #d52941;
+  --color-accent-hover: #ef3e36;
+  --color-text: #ffffff;
+  --color-border: #1f1f1f;
+  --border-radius: 50px;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: inter, Arial, Helvetica, sans-serif;
+  font-size: 2.4rem;
+  line-height: 1.5;
+
+  color: var(--color-body);
+}
+h1,
+h2,
+h3 {
+  color: var(--color-heading);
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 7rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p {
+  margin-top: 0;
+}
+@media screen and (min-width: 700px) {
+  body {
+    font-size: 1.8rem;
+  }
+
+  h1 {
+    font-size: 8rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+}
+/* images */
+@media screen and (min-width: 700px) {
+  .img_logo {
+    float: right;
+    margin-right: 20rem;
+  }
+}
+/* Inputs */
+
+.input {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+  color: var(--color-primary);
+  outline: 0;
+  flex-grow: 1;
+  padding: 1.3rem 3.5rem;
+  width: 100px;
+  font-size: 15px;
+  text-align: right;
+}
+
+::placeholder {
+  color: #cdcbd7;
+  text-align: right;
+}
+
+.input--group {
+  border-radius: var(--border-radius);
+  display: flex;
+}
+
+.input:focus {
+  border: 1px solid var(--color-accent-hover);
+}
+
+/* Buttons */
+
+.btn_sape {
+  border-radius: 50px;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.btn--accent {
+  background: none;
+  color: #fff;
+  font-size: 0;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  padding: 0;
+  margin: 0;
+}
+.btn_login {
+  background-color: var(--color-accent);
+  color: #fff;
+  width: 100px;
+  font-size: 15px;
+  border-radius: 100px;
+  padding: 1rem 3.5rem;
+}
+.btn_login span {
+  display: none;
+}
+.btn_login i {
+  font-size: 2.5rem;
+}
+
+.btn_login:hover,
+.btn_login:active,
+.btn_login:focus {
+  background-color: var(--color-accent-hover) !important;
+  color: #fff !important;
+  outline: none;
+}
+
+/* login */
+.login_page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: -1px 2px 43px -17px rgba(0, 0, 0, 0.75);
+}
+.input--login {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+}
+.custom_font {
+  font-size: 2rem;
+}
+.info_text {
+  font-size: 1.5rem;
+  width: 250px;
+  word-wrap: break-word;
+}
+@media screen and (min-width: 700px) {
+  .login_page {
+    width: 550px;
+  }
+  .custom_font {
+    font-size: 2.5rem;
+  }
+  .info_text {
+    font-size: 1.6rem;
+    width: 100%;
+    word-wrap: normal;
+  }
+}
+/* checkbox */
+
+.checkbox_color:checked {
+  background-color: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+}
+.checkbox_color:focus {
+  border-color: var(--color-accent-hover);
+  box-shadow: 0 0 0 0.25rem rgba(239, 62, 54, 0.25);
+}
+.center-line {
+  width: 75%; /* عرض خط */
+  margin: 0 auto; /* تراز مرکزی */
+  margin-top: 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.405); /* مشخص کردن خط */
+}
+.sign_in {
+  color: var(--color-accent-hover);
+}
+.checkbox-size {
+  transform: scale(0.7);
+}
+@media screen and (min-width: 700px) {
+  .checkbox-size {
+    margin-right: 30px;
+    transform: scale(1);
+  }
+}
