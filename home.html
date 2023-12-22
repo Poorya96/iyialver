@@ -30,13 +30,13 @@
       <div class="container nav_container text-center mt-2">
         <div class="grid_container">
           <!-- col1 -->
-          <div class="mb-4 col1">
-            <a href="#">
+          <div class="col1">
+            <a href="home.html">
               <img
                 src="/images/logo.webp"
                 alt="logo"
                 class="img-fluid img_logo"
-                width="150px"
+                width="110px"
               />
             </a>
           </div>
@@ -74,14 +74,18 @@
                 />
                 ورود و ثبت نام
               </a>
-              <button class="btn_sape btn--accent ms-4" type="button">
+              <a
+                class="btn_sape btn--accent ms-4"
+                type="button"
+                href="cart.html"
+              >
                 <img
                   class="icon icon--cart"
                   src="/images/cart.svg"
                   alt="menu button"
                 />
                 سبد خرید
-              </button>
+              </a>
             </div>
           </div>
           <!-- col4 -->
@@ -147,7 +151,7 @@
                           <span class="visually-hidden">Toggle Dropdown</span>
                         </button>
                         <div class="dropdown-menu dropdown-menu-right D_menu1">
-                          <ul class="dropdown_items">
+                          <ul class="dropdown_items list-unstyled">
                             <li>
                               <a class="dropdown-item" href="#">Action</a>
                             </li>
@@ -176,7 +180,7 @@
                           <span class="visually-hidden">Toggle Dropdown</span>
                         </button>
                         <div class="dropdown-menu dropdown-menu-right D_menu2">
-                          <ul class="dropdown_items">
+                          <ul class="dropdown_items list-unstyled">
                             <li>
                               <a class="dropdown-item" href="#">Action</a>
                             </li>
@@ -213,7 +217,7 @@
                           <span class="visually-hidden">Toggle Dropdown</span>
                         </button>
                         <div class="dropdown-menu dropdown-menu-right D_menu3">
-                          <ul class="dropdown_items">
+                          <ul class="dropdown_items list-unstyled">
                             <li>
                               <a class="dropdown-item" href="#">Action</a>
                             </li>
@@ -242,7 +246,7 @@
                           <span class="visually-hidden">Toggle Dropdown</span>
                         </button>
                         <div class="dropdown-menu dropdown-menu-right D_menu4">
-                          <ul class="dropdown_items">
+                          <ul class="dropdown_items list-unstyled">
                             <li>
                               <a class="dropdown-item" href="#">Action</a>
                             </li>
@@ -271,7 +275,7 @@
                           <span class="visually-hidden">Toggle Dropdown</span>
                         </button>
                         <div class="dropdown-menu dropdown-menu-right D_menu5">
-                          <ul class="dropdown_items">
+                          <ul class="dropdown_items list-unstyled">
                             <li>
                               <a class="dropdown-item" href="#">Action</a>
                             </li>
@@ -1393,16 +1397,18 @@
           <h3>نماد اعتماد</h3>
           <p class="opacity-75">راه های اعتماد به فروشگاه</p>
           <p class="Separating_line">______</p>
-          <div class="row d-flex justify-content-center">
-            <div class="col-4">
-              <a href="#"
-                ><img src="/images/namad-1.png" alt="" class="security_img"
-              /></a>
-            </div>
-            <div class="col-4">
-              <a href="#"
-                ><img src="/images/namad-2.png" alt="" class="security_img"
-              /></a>
+          <div class="d-flex justify-content-center">
+            <div class="row trust_section">
+              <div class="col-4">
+                <a href="#"
+                  ><img src="/images/namad-1.png" alt="" class="security_img"
+                /></a>
+              </div>
+              <div class="col-4">
+                <a href="#"
+                  ><img src="/images/namad-2.png" alt="" class="security_img"
+                /></a>
+              </div>
             </div>
           </div>
           <div class="about_input">
@@ -1424,10 +1430,10 @@
     <footer class="footer mt-5">
       <div class="container text-center pt-3 footer_body" dir="rtl">
         <div class="row">
-          <div class="col-sm-12 col-md-8 footer_links">
+          <div class="col-sm-12 col-md-6 col-xl-8 footer_links">
             <div class="container">
               <div class="row text-end fs-4 mt-3">
-                <div class="col-2">
+                <div class="col-3">
                   <ul class="list-unstyled">
                     <li>
                       <a href="#" class="text-decoration-none text-dark"
@@ -1451,7 +1457,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="col-2">
+                <div class="col-3">
                   <ul class="list-unstyled">
                     <li>
                       <a href="#" class="text-decoration-none text-dark"
@@ -1475,7 +1481,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="col-2">
+                <div class="col-3">
                   <ul class="list-unstyled">
                     <li>
                       <a href="#" class="text-decoration-none text-dark"
@@ -1499,7 +1505,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="col-2">
+                <div class="col-3">
                   <ul class="list-unstyled">
                     <li>
                       <a href="#" class="text-decoration-none text-dark"
@@ -1526,16 +1532,18 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-sm-12 col-md-6 col-xl-4">
             <h4 class="text-end">دانلود اپلیکیشن</h4>
-            <div class="container text-center mt-4">
+            <div
+              class="container text-center mt-4 .overflow-hidden download_section"
+            >
               <div class="row d-flex justify-content-center align-items-center">
-                <div class="col-4 col-md-5">
+                <div class="col-5">
                   <a href="#">
                     <img src="/images/bazar-download.svg" alt="Download" />
                   </a>
                 </div>
-                <div class="col-4 col-md-5">
+                <div class="col-5">
                   <a href="#">
                     <img src="/images/sibche-download.svg" alt="Download" />
                   </a>
@@ -1544,12 +1552,12 @@
               <div
                 class="row d-flex justify-content-center align-items-center mt-3"
               >
-                <div class="col-4 col-md-5">
+                <div class="col-5">
                   <a href="#">
                     <img src="/images/sibapp-download.svg" alt="Download" />
                   </a>
                 </div>
-                <div class="col-4 col-md-5">
+                <div class="col-5">
                   <a href="#">
                     <img src="/images/pwa-download.svg" alt="Download" />
                   </a>

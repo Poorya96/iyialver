@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cart_style.css" />
+    <title>cart</title>
+    <link rel="icon" href="/images/x-icon.webp" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <div class="nav">
+      <div class="container nav_container text-center mt-2">
+        <div class="grid_container">
+          <!-- col1 -->
+          <div class="col1">
+            <a href="home.html">
+              <img
+                src="/images/logo.webp"
+                alt="logo"
+                class="img-fluid img_logo"
+                width="110px"
+              />
+            </a>
+          </div>
+          <!-- col2 -->
+          <div class="col2">
+            <div class="input--group mt-2">
+              <button class="btn_sape btn--accent" type="button">
+                <img
+                  class="icon icon--search"
+                  src="/images/search.svg"
+                  alt="menu button"
+                />
+                جستجو
+              </button>
+              <input
+                type="text"
+                class="input"
+                placeholder="نام محصول مد نظر را وارد کنید"
+                aria-label="نام محصول مد نظر را وارد کنید"
+              />
+            </div>
+          </div>
+          <!-- col3 -->
+          <div class="col3">
+            <div class="float-start btns">
+              <a
+                class="btn_sape btn--accent ms-2"
+                type="button"
+                href="login.html"
+              >
+                <img
+                  class="icon icon--user"
+                  src="/images/user.svg"
+                  alt="menu button"
+                />
+                ورود و ثبت نام
+              </a>
+              <a
+                class="btn_sape btn--accent ms-4"
+                type="button"
+                href="cart.html"
+              >
+                <img
+                  class="icon icon--cart"
+                  src="/images/cart.svg"
+                  alt="menu button"
+                />
+                سبد خرید
+              </a>
+            </div>
+          </div>
+          <!-- col4 -->
+          <div class="col4">
+            <nav
+              class="navbar navbar-expand-lg navbar-white float-end"
+              aria-label="Offcanvas navbar large"
+            >
+              <div class="container-fluid">
+                <button
+                  class="btn_sape btn--accent navbar-toggler"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                >
+                  <img
+                    class="icon icon--menu"
+                    src="/images/menu.svg"
+                    alt="menu button"
+                  />
+                  منو
+                </button>
+                <div
+                  class="offcanvas offcanvas-end text-bg-light"
+                  tabindex="-1"
+                  id="offcanvasNavbar"
+                  aria-labelledby="offcanvasNavbarLabel"
+                >
+                  <div class="offcanvas-header">
+                    <img
+                      src="/images/logo.webp"
+                      alt="logo"
+                      class="img-fluid offcanvas-title"
+                      width="100px"
+                      id="offcanvasNavbarLabel"
+                    />
+                    <button
+                      type="button"
+                      class="btn-close btn-close-black"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul
+                      class="navbar-nav ml-auto float-end mt-5 text-end nav_items"
+                    >
+                      <li class="nav-item dropdown rtl">
+                        <button
+                          class="btn_Dropdown Dropdown_name"
+                          type="button"
+                          id="dropdown1"
+                        >
+                          کامپیوتر و قطعات
+                        </button>
+                        <button
+                          type="button"
+                          class="btn_Dropdown dropdown-toggle dropdown-toggle-split"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right D_menu1">
+                          <ul class="dropdown_items list-unstyled">
+                            <li>
+                              <a class="dropdown-item" href="#">Action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Another action</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+
+                      <li class="nav-item dropdown rtl">
+                        <button
+                          class="btn_Dropdown Dropdown_name"
+                          type="button"
+                        >
+                          گوشی همراه و تجهیزات جانبی
+                        </button>
+                        <button
+                          type="button"
+                          class="btn_Dropdown dropdown-toggle dropdown-toggle-split"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right D_menu2">
+                          <ul class="dropdown_items list-unstyled">
+                            <li>
+                              <a class="dropdown-item" href="#">Action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Another action</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">Action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Another action</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+
+                      <li class="nav-item dropdown rtl">
+                        <button
+                          class="btn_Dropdown Dropdown_name"
+                          type="button"
+                        >
+                          تجهیزات گیمینگ
+                        </button>
+                        <button
+                          type="button"
+                          class="btn_Dropdown dropdown-toggle dropdown-toggle-split"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right D_menu3">
+                          <ul class="dropdown_items list-unstyled">
+                            <li>
+                              <a class="dropdown-item" href="#">Action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Another action</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+
+                      <li class="nav-item dropdown rtl">
+                        <button
+                          class="btn_Dropdown Dropdown_name"
+                          type="button"
+                        >
+                          لپ تاپ
+                        </button>
+                        <button
+                          type="button"
+                          class="btn_Dropdown dropdown-toggle dropdown-toggle-split"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right D_menu4">
+                          <ul class="dropdown_items list-unstyled">
+                            <li>
+                              <a class="dropdown-item" href="#">Action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Another action</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+
+                      <li class="nav-item dropdown rtl">
+                        <button
+                          class="btn_Dropdown Dropdown_name"
+                          type="button"
+                        >
+                          لوازم شبکه
+                        </button>
+                        <button
+                          type="button"
+                          class="btn_Dropdown dropdown-toggle dropdown-toggle-split"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right D_menu5">
+                          <ul class="dropdown_items list-unstyled">
+                            <li>
+                              <a class="dropdown-item" href="#">Action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Another action</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- info_grid -->
+    <div class="container text-center mt-5" dir="rtl">
+      <div
+        class="row me-sm-5 g-sm-5 mx-2 flex-nowrap overflow-auto overflow-y-hidden"
+      >
+        <div class="col d-flex gx-5">
+          <i class="bi bi-truck info_icon"></i>
+          <div class="me-4 info_text">
+            <h3 class="fw-bold">ارسال سفارش</h3>
+            <p>در سریعترین زمان</p>
+          </div>
+        </div>
+        <!--c2 -->
+        <div class="col d-flex gx-5 gx-sm-0">
+          <i class="bi bi-credit-card-2-back info_icon"></i>
+          <div class="me-4 info_text">
+            <h3 class="fw-bold">پرداخت امن</h3>
+            <p>از درگاه معتبر بانکی</p>
+          </div>
+        </div>
+        <!--c3-->
+        <div class="col d-flex gx-5 gx-sm-0">
+          <i class="bi bi-gift-fill info_icon info_icon_gift"></i>
+          <div class="me-4 info_text">
+            <h3 class="fw-bold">ارسال هدیه</h3>
+            <p>برای اولین سفارش</p>
+          </div>
+        </div>
+        <!--c4-->
+        <div class="col d-flex gx-5 gx-sm-0">
+          <i class="bi bi-arrow-clockwise info_icon"></i>
+          <div class="me-4 info_text">
+            <h3 class="fw-bold">۷ روز ضمانت</h3>
+            <p>بازگشت محصول</p>
+          </div>
+        </div>
+        <!--c5-->
+        <div class="col d-flex gx-5 gx-sm-0">
+          <i class="bi bi-headphones info_icon"></i>
+          <div class="me-4 info_text">
+            <h3 class="fw-bold">پشتیبانی آنلاین</h3>
+            <p>در ۲۴ ساعت شبانه روز</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- cart -->
+    <div class="container text-center cart" dir="rtl">
+      <div class="row g-4">
+        <div class="col-12 col-lg-8" id="cart">
+          <div class="bg-white rounded-5 cart_pri">
+            <h3 class="text-end pt-3 me-5">سبد خرید</h3>
+            <div class="center-line"></div>
+            <p class="text-center w-100 py-5 fs-1 card_empty" id="card_empty">
+              سبد خرید خالی است.
+            </p>
+            <div class="row g-5 cart_info" id="product">
+              <div class="col-2">
+                <img
+                  src="images/c1.jpg"
+                  alt="image of product"
+                  class="product_img mx-lg-3"
+                />
+              </div>
+              <div class="col-4 col-lg-3">
+                <div class="me-5">
+                  <h3 class="text-end product_name">نام محصول</h3>
+                  <h4 class="text-end exp1">توضیحات</h4>
+                  <h4 class="text-end mt-5 exp2">توضیحات 2</h4>
+                </div>
+              </div>
+              <div
+                class="col-6 col-lg-3 col_number d-flex justify-content-center"
+              >
+                <div class="mt-xl-5">
+                  <h4 class="text-center">تعداد</h4>
+                  <div class="mx-5 mx-lg-0">
+                    <div class="row">
+                      <div class="col">
+                        <button
+                          class="num_btns btn__add"
+                          id="add-product"
+                          aria-label="add product"
+                        >
+                          <i class="bi bi-plus-circle-fill"></i>
+                        </button>
+                      </div>
+                      <div class="col">
+                        <p class="numer fw-bold" id="number">۱</p>
+                      </div>
+                      <div class="col">
+                        <button
+                          class="num_btns btn__minus"
+                          id="minus-product"
+                          aria-label="minus product"
+                        >
+                          <i class="bi bi-dash-circle-fill"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-4 col-lg-2 col_price d-flex justify-content-center"
+              >
+                <div class="me-5 mt-xl-5 mt-2">
+                  <p class="text-center">قیمت قبلی</p>
+                  <p class="text-center new_price">قیمت جدید</p>
+                </div>
+              </div>
+              <div class="col-6 col-lg-2 col_del">
+                <div class="me-5">
+                  <button
+                    class="btn btn__delete"
+                    id="delete-product"
+                    aria-label="delete product"
+                  >
+                    <span class="del_text">حذف از سبد خرید</span>
+                    <span class="del_icon"
+                      ><i class="bi bi-x-circle-fill"></i
+                    ></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="center-line"></div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4" id="checkout">
+          <div class="bg-white rounded-5 cart_sec">
+            <div class="py-3">
+              <div class="container text-center px-4">
+                <div class="row">
+                  <div class="col"><h4 class="text-end">جمع جز:</h4></div>
+                  <div class="col"><h4 class="text-start">....تومن</h4></div>
+                </div>
+                <div class="row">
+                  <div class="col"><h4 class="text-end fs-3">جمع کل:</h4></div>
+                  <div class="col">
+                    <h4 class="text-start fs-3">....تومن</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="center-line"></div>
+              <p class="fs-4 text-end mx-5 mb-5">
+                کالاهای موجود در سبد خرید، هنوز ثبت و رزرو نشده اند. برای ثبت
+                سفارش روی دکمه تسویه حساب کلیک کنید.
+              </p>
+              <a href="#" class="btn btn_checkout">تسویه حساب</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- about us -->
+    <div class="container text-center mt-3">
+      <div class="row" dir="rtl">
+        <div class="col d-flex flex-column">
+          <div class="social">
+            <a href="#">
+              <div class="about_logo">
+                <img
+                  src="images/logo.webp"
+                  alt="logo"
+                  class="img-fluid"
+                  width="100px"
+                />
+              </div>
+            </a>
+
+            <div class="row mb-5 justify-content-center fs-1">
+              <div class="col-2">
+                <a href="#"><i class="bi bi-instagram text-white"></i></a>
+              </div>
+              <div class="col-2">
+                <a href="#"><i class="bi bi-telegram text-white"></i></a>
+              </div>
+              <div class="col-2">
+                <a href="#"><i class="bi bi-twitter text-white"></i></a>
+              </div>
+              <div class="col-2">
+                <a href="#"><i class="bi bi-facebook text-white"></i></a>
+              </div>
+            </div>
+            <p class="fs-2 mb-5">۰۲۱<span class="fs-1 ms-2">۴۰۰۸۱۴۴</span></p>
+            <p class="fs-3 mb-2">info@Sitename.com</p>
+            <p class="fs-3 mb-5">تهران، اشرفی اصفهانی، جلال آل احمد</p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 text-end mx-5 about_text">
+          <h3>درباره<span> فروشگاه</span></h3>
+          <p class="Separating_line">______</p>
+          <p class="about_text_body fs-4">
+            فروشگاه اینترنتی فعالیت خود را از سال ۱۳۹۸ در زمینه فروش کیف پول های
+            سخت افزاری شروع نموده است . این مجموعه کالا های خود را بدون واسطه و
+            از طریق شرکت های اصلی سازنده کیف پول های سخت افزاری به صورت مستقیم
+            تامین می کند و همچنین ضمانت اصالت و سلامت کالا را به تمام مشتریان
+            ارائه می دهد. هدف اصلی ما در مجموعه تهران ولت در تمام این مدت تا به
+            امروز این بوده است که شما عزیزان را برای خریدی بهتر به درستی
+            راهنمایی کنیم تا در دنیای زیبای ارز های دیجیتال با خیالی آسوده ارز
+            های خود را به صورت کاملا امن نگهداری کنید.
+          </p>
+        </div>
+        <div class="col mx-5 mx-md-0 text-end pb-3">
+          <h3>نماد اعتماد</h3>
+          <p class="opacity-75">راه های اعتماد به فروشگاه</p>
+          <p class="Separating_line">______</p>
+          <div class="d-flex justify-content-center">
+            <div class="row trust_section">
+              <div class="col-4">
+                <a href="#"
+                  ><img src="/images/namad-1.png" alt="" class="security_img"
+                /></a>
+              </div>
+              <div class="col-4">
+                <a href="#"
+                  ><img src="/images/namad-2.png" alt="" class="security_img"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="about_input">
+            <h4 class="mt-3 fs-3">عضویت در <span>خبرنامه</span></h4>
+            <div class="input--group mt-4" dir="ltr">
+              <button class="btn_sape btn--enter" type="button">ثبت</button>
+              <input
+                type="email"
+                class="input"
+                placeholder="ایمیل شما"
+                aria-label="ایمیل شما"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer mt-5">
+      <div class="container text-center pt-3 footer_body" dir="rtl">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-xl-8 footer_links">
+            <div class="container">
+              <div class="row text-end fs-4 mt-3">
+                <div class="col-3">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 1</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 2</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 3</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 4</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-3">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 1</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 2</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 3</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 4</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-3">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 1</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 2</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 3</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 4</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-3">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 1</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 2</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 3</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 4</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-xl-4">
+            <h4 class="text-end">دانلود اپلیکیشن</h4>
+            <div
+              class="container text-center mt-4 .overflow-hidden download_section"
+            >
+              <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-5">
+                  <a href="#">
+                    <img src="/images/bazar-download.svg" alt="Download" />
+                  </a>
+                </div>
+                <div class="col-5">
+                  <a href="#">
+                    <img src="/images/sibche-download.svg" alt="Download" />
+                  </a>
+                </div>
+              </div>
+              <div
+                class="row d-flex justify-content-center align-items-center mt-3"
+              >
+                <div class="col-5">
+                  <a href="#">
+                    <img src="/images/sibapp-download.svg" alt="Download" />
+                  </a>
+                </div>
+                <div class="col-5">
+                  <a href="#">
+                    <img src="/images/pwa-download.svg" alt="Download" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-8 mt-3 footer_about_p1">
+            <p class="fs-3">
+              کلیه حقوق این سایت متعلق به <span>فروشگاه</span> است.
+            </p>
+          </div>
+          <div class="col mt-3 text-start footer_about_p2">
+            <p>طراحی و پیاده سازی</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+  <script src="js/main.js"></script>
+</html>
