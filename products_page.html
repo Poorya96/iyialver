@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>products_page</title>
+    <link rel="icon" href="/images/x-icon.webp" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <div class="nav">
+      <div class="container nav_container text-center mt-2">
+        <div class="grid_container">
+          <!-- col1 -->
+          <div class="col1">
+            <a href="home.html">
+              <img
+                src="/images/logo.webp"
+                alt="logo"
+                class="img-fluid img_logo"
+                width="110px"
+              />
+            </a>
+          </div>
+          <!-- col2 -->
+          <div class="col2">
+            <div class="input--group mt-2">
+              <button class="btn_sape btn--accent" type="button">
+                <img
+                  class="icon icon--search"
+                  src="/images/search.svg"
+                  alt="menu button"
+                />
+                جستجو
+              </button>
+              <input
+                type="text"
+                class="input"
+                placeholder="نام محصول مد نظر را وارد کنید"
+                aria-label="نام محصول مد نظر را وارد کنید"
+              />
+            </div>
+          </div>
+          <!-- col3 -->
+          <div class="col3">
+            <div class="float-start btns">
+              <a
+                class="btn_sape btn--accent ms-2"
+                type="button"
+                href="login.html"
+              >
+                <img
+                  class="icon icon--user"
+                  src="/images/user.svg"
+                  alt="menu button"
+                />
+                ورود و ثبت نام
+              </a>
+              <a
+                class="btn_sape btn--accent ms-4"
+                type="button"
+                href="cart.html"
+              >
+                <img
+                  class="icon icon--cart"
+                  src="/images/cart.svg"
+                  alt="menu button"
+                />
+                سبد خرید
+              </a>
+            </div>
+          </div>
+          <!-- col4 -->
+          <div class="col4">
+            <nav
+              class="navbar navbar-expand-lg navbar-white float-end"
+              aria-label="Offcanvas navbar large"
+            >
+              <div class="container-fluid">
+                <button
+                  class="btn_sape btn--accent navbar-toggler"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                >
+                  <img
+                    class="icon icon--menu"
+                    src="/images/menu.svg"
+                    alt="menu button"
+                  />
+                  منو
+                </button>
+                <div
+                  class="offcanvas offcanvas-end text-bg-light"
+                  tabindex="-1"
+                  id="offcanvasNavbar"
+                  aria-labelledby="offcanvasNavbarLabel"
+                >
+                  <div class="offcanvas-header">
+                    <img
+                      src="/images/logo.webp"
+                      alt="logo"
+                      class="img-fluid offcanvas-title"
+                      width="100px"
+                      id="offcanvasNavbarLabel"
+                    />
+                    <button
+                      type="button"
+                      class="btn-close btn-close-black"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul
+                      class="navbar-nav ml-auto float-end mt-5 text-end nav_items"
+                    >
+                      <li class="nav-item dropdown rtl">
+                        <button
+                          class="btn_Dropdown Dropdown_name"
+                          type="button"
+                          id="dropdown1"
+                        >
+                          کامپیوتر و قطعات
+                        </button>
+                        <button
+                          type="button"
+                          class="btn_Dropdown dropdown-toggle dropdown-toggle-split"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right D_menu1">
+                          <ul class="dropdown_items list-unstyled">
+                            <li>
+                              <a class="dropdown-item" href="products_page.html"
+                                >Action</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="products_page.html"
+                                >Another action</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+
+                      <li class="nav-item dropdown rtl">
+                        <button
+                          class="btn_Dropdown Dropdown_name"
+                          type="button"
+                        >
+                          گوشی همراه و تجهیزات جانبی
+                        </button>
+                        <button
+                          type="button"
+                          class="btn_Dropdown dropdown-toggle dropdown-toggle-split"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right D_menu2">
+                          <ul class="dropdown_items list-unstyled">
+                            <li>
+                              <a class="dropdown-item" href="products_page.html"
+                                >Action</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="products_page.html"
+                                >Another action</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="products_page.html"
+                                >Action</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="products_page.html"
+                                >Another action</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+
+                      <li class="nav-item dropdown rtl">
+                        <button
+                          class="btn_Dropdown Dropdown_name"
+                          type="button"
+                        >
+                          تجهیزات گیمینگ
+                        </button>
+                        <button
+                          type="button"
+                          class="btn_Dropdown dropdown-toggle dropdown-toggle-split"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right D_menu3">
+                          <ul class="dropdown_items list-unstyled">
+                            <li>
+                              <a class="dropdown-item" href="products_page.html"
+                                >Action</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="products_page.html"
+                                >Another action</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+
+                      <li class="nav-item dropdown rtl">
+                        <button
+                          class="btn_Dropdown Dropdown_name"
+                          type="button"
+                        >
+                          لپ تاپ
+                        </button>
+                        <button
+                          type="button"
+                          class="btn_Dropdown dropdown-toggle dropdown-toggle-split"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right D_menu4">
+                          <ul class="dropdown_items list-unstyled">
+                            <li>
+                              <a class="dropdown-item" href="products_page.html"
+                                >Action</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="products_page.html"
+                                >Another action</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+
+                      <li class="nav-item dropdown rtl">
+                        <button
+                          class="btn_Dropdown Dropdown_name"
+                          type="button"
+                        >
+                          لوازم شبکه
+                        </button>
+                        <button
+                          type="button"
+                          class="btn_Dropdown dropdown-toggle dropdown-toggle-split"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right D_menu5">
+                          <ul class="dropdown_items list-unstyled">
+                            <li>
+                              <a class="dropdown-item" href="products_page.html"
+                                >Action</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="products_page.html"
+                                >Another action</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- products_page -->
+    <div class="container text-center products_page py-5">
+      <div class="row">
+        <div class="col-12 col-xl-10">
+          <div class="row rtl pt-3">
+            <div class="col-12 col-xl-10">
+              <div class="row">
+                <div class="col-1">
+                  <i class="bi bi-rainbow"></i>
+                </div>
+                <div class="col-7 col-xl-11 text-end pe-5">
+                  <h3 class="d-xl-none mt-1">صفحه محصولات</h3>
+                  <h2 class="d-none d-xl-block">صفحه</h2>
+                  <p class="d-none d-xl-block">محصولات</p>
+                </div>
+                <div class="col d-xl-none text-start">
+                  <button
+                    class="btn btn_cart fs-3 mb-4"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample"
+                  >
+                    <span>اعمال فیلتر‌ </span>
+                    <i class="bi bi-funnel"></i>
+                  </button>
+                </div>
+                <!-- offcanvas -->
+                <div
+                  class="offcanvas offcanvas-start overflow-auto"
+                  tabindex="-1"
+                  id="offcanvasExample"
+                  aria-labelledby="offcanvasExampleLabel"
+                >
+                  <div class="row">
+                    <div class="col-12 pt-5">
+                      <div class="row rtl">
+                        <div class="col-12 text-center">
+                          <h3>مرتب سازی بر اساس</h3>
+                        </div>
+                        <div class="col text-start">
+                          <div
+                            class="btn-group btn-group-lg plist-order rounded-4"
+                            role="group"
+                            aria-label="Basic radio toggle button group"
+                          >
+                            <input
+                              type="radio"
+                              class="btn-check custom-control-input"
+                              name="btnradio"
+                              id="btnradio_1"
+                              autocomplete="off"
+                              checked
+                            />
+                            <label
+                              class="btn btn_order btn-outline-danger rounded-0 rounded-end-4 custom-control-label"
+                              for="btnradio_1"
+                              >پر فروش‌ترین‌ها</label
+                            >
+
+                            <input
+                              type="radio"
+                              class="btn-check"
+                              name="btnradio"
+                              id="btnradio_2"
+                              autocomplete="off"
+                            />
+                            <label
+                              class="btn btn_order btn-outline-danger rounded-0"
+                              for="btnradio_2"
+                              >محبوب‌ترین‌ها</label
+                            >
+
+                            <input
+                              type="radio"
+                              class="btn-check"
+                              name="btnradio"
+                              id="btnradio_3"
+                              autocomplete="off"
+                            />
+                            <label
+                              class="btn btn_order btn-outline-danger rounded-0"
+                              for="btnradio_3"
+                              >جدید‌ترین‌ها</label
+                            >
+
+                            <input
+                              type="radio"
+                              class="btn-check"
+                              name="btnradio"
+                              id="btnradio_4"
+                              autocomplete="off"
+                            />
+                            <label
+                              class="btn btn_order btn-outline-danger rounded-0"
+                              for="btnradio_4"
+                              >ارزان‌ترین‌ها</label
+                            >
+
+                            <input
+                              type="radio"
+                              class="btn-check"
+                              name="btnradio"
+                              id="btnradio_5"
+                              autocomplete="off"
+                            />
+                            <label
+                              class="btn btn_order btn-outline-danger rounded-0 rounded-start-4"
+                              for="btnradio_5"
+                              >گران‌ترین‌ها</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="center-line w-100"></div>
+                  <div class="col-12">
+                    <div class="rounded-5 filter_menu mt-5 border-0">
+                      <h3 class="pt-1">فیلتر محصولات</h3>
+                      <div class="pt-3 pe-4">
+                        <div class="form-check form-check-reverse form-switch">
+                          <input
+                            class="form-check-input checkbox_color"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckDefault"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexSwitchCheckDefault"
+                            >فقط کالا‌های موجود</label
+                          >
+                        </div>
+                        <div
+                          class="form-check form-check-reverse form-switch pt-2"
+                        >
+                          <input
+                            class="form-check-input checkbox_color"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckDefault"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexSwitchCheckDefault"
+                            >فقط کالا‌های تخفیف دار</label
+                          >
+                        </div>
+                      </div>
+                      <div class="pt-5">
+                        <p class="text-end px-4">
+                          <input
+                            type="checkbox"
+                            class="btn-check"
+                            id="toggleCheckbox"
+                            autocomplete="off"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseWidthExample"
+                            aria-expanded="false"
+                            aria-controls="collapseWidthExample"
+                          />
+                          <label
+                            class="btn btn-outline-danger w-100 d-flex justify-content-between align-items-center"
+                            for="toggleCheckbox"
+                          >
+                            <span class="me-2 order-2">
+                              <i class="bi bi-chevron-compact-down"></i>
+                            </span>
+                            <span class="order-1 fs-4"> تولید کننده </span>
+                          </label>
+                        </p>
+                        <div class="collaps_body">
+                          <div
+                            class="collapse collapse-horizontal"
+                            id="collapseWidthExample"
+                          >
+                            <div class="card card-body border-0">
+                              <div class="scroll-container overflow-auto">
+                                <!-- این والد با کلاس scroll-container افزوده شده است -->
+                                <div class="form-check form-check-reverse me-4">
+                                  <input
+                                    class="form-check-input checkbox_color"
+                                    type="checkbox"
+                                    value=""
+                                    id="flexCheckChecked"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="flexCheckChecked"
+                                  >
+                                    Microsoft
+                                  </label>
+                                </div>
+                                <div
+                                  class="form-check form-check-reverse pt-3 me-4"
+                                >
+                                  <input
+                                    class="form-check-input checkbox_color"
+                                    type="checkbox"
+                                    value=""
+                                    id="flexCheckChecked2"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="flexCheckChecked2"
+                                  >
+                                    Razer
+                                  </label>
+                                </div>
+                                <!-- اضافه کردن چک باکس‌ها به این والد باعث می‌شود که اسکرول به درستی نمایش داده شود -->
+                                <!-- افزوده شدن چک باکس‌های بیشتر اینجا -->
+                                <div
+                                  class="form-check form-check-reverse pt-3 me-4"
+                                >
+                                  <input
+                                    class="form-check-input checkbox_color"
+                                    type="checkbox"
+                                    value=""
+                                    id="flexCheckChecked3"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="flexCheckChecked3"
+                                  >
+                                    Logitech
+                                  </label>
+                                </div>
+                                <div
+                                  class="form-check form-check-reverse pt-3 me-4"
+                                >
+                                  <input
+                                    class="form-check-input checkbox_color"
+                                    type="checkbox"
+                                    value=""
+                                    id="flexCheckChecked4"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="flexCheckChecked4"
+                                  >
+                                    Onikuma
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- ---- -->
+                      <div class="pt-3">
+                        <p class="text-end px-4">
+                          <input
+                            type="checkbox"
+                            class="btn-check"
+                            id="toggleCheckbox2"
+                            autocomplete="off"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseWidthExample2"
+                            aria-expanded="false"
+                            aria-controls="collapseWidthExample2"
+                          />
+                          <label
+                            class="btn btn-outline-danger w-100 d-flex justify-content-between align-items-center"
+                            for="toggleCheckbox2"
+                          >
+                            <span class="me-2 order-2">
+                              <i class="bi bi-chevron-compact-down"></i>
+                            </span>
+                            <span class="order-1 fs-4"> رنگ</span>
+                          </label>
+                        </p>
+                        <div class="collaps_body">
+                          <div
+                            class="collapse collapse-horizontal"
+                            id="collapseWidthExample2"
+                          >
+                            <div class="card card-body border-0">
+                              <div class="scroll-container overflow-auto">
+                                <!-- این والد با کلاس scroll-container افزوده شده است -->
+                                <div class="form-check form-check-reverse me-4">
+                                  <input
+                                    class="form-check-input checkbox_color"
+                                    type="checkbox"
+                                    value=""
+                                    id="flexCheckChecked"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="flexCheckChecked"
+                                  >
+                                    سفید
+                                  </label>
+                                </div>
+                                <div
+                                  class="form-check form-check-reverse pt-3 me-4"
+                                >
+                                  <input
+                                    class="form-check-input checkbox_color"
+                                    type="checkbox"
+                                    value=""
+                                    id="flexCheckChecked2"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="flexCheckChecked2"
+                                  >
+                                    سیاه
+                                  </label>
+                                </div>
+                                <!-- اضافه کردن چک باکس‌ها به این والد باعث می‌شود که اسکرول به درستی نمایش داده شود -->
+                                <!-- افزوده شدن چک باکس‌های بیشتر اینجا -->
+                                <div
+                                  class="form-check form-check-reverse pt-3 me-4"
+                                >
+                                  <input
+                                    class="form-check-input checkbox_color"
+                                    type="checkbox"
+                                    value=""
+                                    id="flexCheckChecked3"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="flexCheckChecked3"
+                                  >
+                                    آبی
+                                  </label>
+                                </div>
+                                <div
+                                  class="form-check form-check-reverse pt-3 me-4"
+                                >
+                                  <input
+                                    class="form-check-input checkbox_color"
+                                    type="checkbox"
+                                    value=""
+                                    id="flexCheckChecked4"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="flexCheckChecked4"
+                                  >
+                                    سبز
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- price_range_card -->
+                      <div class="price_range_card pt-3">
+                        <h3 class="text-center">محدوده قیمت</h3>
+                        <div class="price-content rtl">
+                          <div>
+                            <label for="" class="min">حداقل قیمت</label>
+                            <p class="min-value">100000 تومن</p>
+                          </div>
+                          <div>
+                            <label for="" class="max">حدکثر قیمت</label>
+                            <p class="max-value">1000000000 تومن</p>
+                          </div>
+                        </div>
+                        <div class="range-slider rtl">
+                          <div class="range-fill"></div>
+                          <input
+                            type="range"
+                            title="حداقل قیمت"
+                            label="حداقل قیمت"
+                            class="min-price Prange"
+                            value="100000"
+                            min="100000"
+                            max="1000000000"
+                            step="100"
+                          />
+                          <input
+                            type="range"
+                            title="حداکثر قیمت"
+                            label="حداکثر قیمت"
+                            class="max-price Prange"
+                            value="1000000000"
+                            min="100000"
+                            max="1000000000"
+                            step="100"
+                          />
+                        </div>
+                        <button class="btn btn_cart fs-3 mb-4 w-75">
+                          اعمال فیلتر‌ قیمت
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-2 mt-4 p_number">
+              <span class="red_circle product_circle"> ۰ </span>
+              <p>محصول</p>
+            </div>
+          </div>
+          <div class="row order-row">
+            <div class="col-12 pt-3 px-5">
+              <div class="row rtl">
+                <div class="col-4 text-end">
+                  <p>مرتب سازی بر اساس</p>
+                </div>
+                <div class="col text-start">
+                  <div
+                    class="btn-group btn-group-lg plist-order rounded-4"
+                    role="group"
+                    aria-label="Basic radio toggle button group"
+                  >
+                    <input
+                      type="radio"
+                      class="btn-check custom-control-input"
+                      name="btnradio"
+                      id="btnradio1"
+                      autocomplete="off"
+                      checked
+                    />
+                    <label
+                      class="btn btn_order btn-outline-danger rounded-0 rounded-end-4 custom-control-label"
+                      for="btnradio1"
+                      >پر فروش‌ترین‌ها</label
+                    >
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="btnradio"
+                      id="btnradio2"
+                      autocomplete="off"
+                    />
+                    <label
+                      class="btn btn_order btn-outline-danger rounded-0"
+                      for="btnradio2"
+                      >محبوب‌ترین‌ها</label
+                    >
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="btnradio"
+                      id="btnradio3"
+                      autocomplete="off"
+                    />
+                    <label
+                      class="btn btn_order btn-outline-danger rounded-0"
+                      for="btnradio3"
+                      >جدید‌ترین‌ها</label
+                    >
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="btnradio"
+                      id="btnradio4"
+                      autocomplete="off"
+                    />
+                    <label
+                      class="btn btn_order btn-outline-danger rounded-0"
+                      for="btnradio4"
+                      >ارزان‌ترین‌ها</label
+                    >
+
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="btnradio"
+                      id="btnradio5"
+                      autocomplete="off"
+                    />
+                    <label
+                      class="btn btn_order btn-outline-danger rounded-0 rounded-start-4"
+                      for="btnradio5"
+                      >گران‌ترین‌ها</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rtl pt-5 product_gallery">
+            <div class="row row-cols-auto main_row">
+              <div class="col pb-3">
+                <div class="p_card">
+                  <div class="card rounded-5 position-relative">
+                    <span
+                      class="badge rounded-pill text-bg-primary position-absolute ms-3 mt-3 top-0 start-0"
+                      dir="ltr"
+                      ><i class="bi bi-star-fill me-2"></i>
+                      <p>۰</p></span
+                    >
+                    <a
+                      href=""
+                      class="badge badge_cart text-bg-success fs-4 rounded-bottom-5 text-decoration-none position-absolute start-0 end-0 mx-auto"
+                    >
+                      مشاهده محصول</a
+                    >
+                    <img
+                      src="images/c1.jpg"
+                      class="card-img-top mt-3 rounded-5"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title text-end fw-bold mt-4">
+                        شارژر همراه شیائومی
+                      </h4>
+                      <p class="card-text text-end mt-2">
+                        مدل Redmi PB200LZM ظرفیت 20000 میلی آمپر ساعت
+                      </p>
+                      <div class="row mt-3 flex-column align-items-start">
+                        <div
+                          class="col d-flex justify-content-between align-items-center mt-2"
+                        >
+                          <p class="price"><span>۵۲۵,۰۰۰</span> تومان</p>
+                          <a href="#" class="btn btn_cart fs-3"
+                            ><span>اضافه به سبد خرید</span>
+                            <i class="bi bi-bag-plus"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col pb-3">
+                <div class="p_card">
+                  <div class="card rounded-5 position-relative">
+                    <span
+                      class="badge rounded-pill text-bg-primary position-absolute ms-3 mt-3 top-0 start-0"
+                      dir="ltr"
+                      ><i class="bi bi-star-fill me-2"></i>
+                      <p>۰</p></span
+                    >
+                    <a
+                      href=""
+                      class="badge badge_cart text-bg-success fs-4 rounded-bottom-5 text-decoration-none position-absolute start-0 end-0 mx-auto"
+                    >
+                      مشاهده محصول</a
+                    >
+                    <img
+                      src="images/c1.jpg"
+                      class="card-img-top mt-3 rounded-5"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title text-end fw-bold mt-4">
+                        شارژر همراه شیائومی
+                      </h4>
+                      <p class="card-text text-end mt-2">
+                        مدل Redmi PB200LZM ظرفیت 20000 میلی آمپر ساعت
+                      </p>
+                      <div class="row mt-3 flex-column align-items-start">
+                        <div
+                          class="col d-flex justify-content-between align-items-center mt-2"
+                        >
+                          <p class="price"><span>۵۲۵,۰۰۰</span> تومان</p>
+                          <a href="#" class="btn btn_cart fs-3"
+                            ><span>اضافه به سبد خرید</span>
+                            <i class="bi bi-bag-plus"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col pb-3">
+                <div class="p_card">
+                  <div class="card rounded-5 position-relative">
+                    <span
+                      class="badge rounded-pill text-bg-primary position-absolute ms-3 mt-3 top-0 start-0"
+                      dir="ltr"
+                      ><i class="bi bi-star-fill me-2"></i>
+                      <p>۰</p></span
+                    >
+                    <a
+                      href=""
+                      class="badge badge_cart text-bg-success fs-4 rounded-bottom-5 text-decoration-none position-absolute start-0 end-0 mx-auto"
+                    >
+                      مشاهده محصول</a
+                    >
+                    <img
+                      src="images/c1.jpg"
+                      class="card-img-top mt-3 rounded-5"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title text-end fw-bold mt-4">
+                        شارژر همراه شیائومی
+                      </h4>
+                      <p class="card-text text-end mt-2">
+                        مدل Redmi PB200LZM ظرفیت 20000 میلی آمپر ساعت
+                      </p>
+                      <div class="row mt-3 flex-column align-items-start">
+                        <div
+                          class="col d-flex justify-content-between align-items-center mt-2"
+                        >
+                          <p class="price"><span>۵۲۵,۰۰۰</span> تومان</p>
+                          <a href="#" class="btn btn_cart fs-3"
+                            ><span>اضافه به سبد خرید</span>
+                            <i class="bi bi-bag-plus"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col pb-3">
+                <div class="p_card">
+                  <div class="card rounded-5 position-relative">
+                    <span
+                      class="badge rounded-pill text-bg-primary position-absolute ms-3 mt-3 top-0 start-0"
+                      dir="ltr"
+                      ><i class="bi bi-star-fill me-2"></i>
+                      <p>۰</p></span
+                    >
+                    <a
+                      href=""
+                      class="badge badge_cart text-bg-success fs-4 rounded-bottom-5 text-decoration-none position-absolute start-0 end-0 mx-auto"
+                    >
+                      مشاهده محصول</a
+                    >
+                    <img
+                      src="images/c1.jpg"
+                      class="card-img-top mt-3 rounded-5"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title text-end fw-bold mt-4">
+                        شارژر همراه شیائومی
+                      </h4>
+                      <p class="card-text text-end mt-2">
+                        مدل Redmi PB200LZM ظرفیت 20000 میلی آمپر ساعت
+                      </p>
+                      <div class="row mt-3 flex-column align-items-start">
+                        <div
+                          class="col d-flex justify-content-between align-items-center mt-2"
+                        >
+                          <p class="price"><span>۵۲۵,۰۰۰</span> تومان</p>
+                          <a href="#" class="btn btn_cart fs-3"
+                            ><span>اضافه به سبد خرید</span>
+                            <i class="bi bi-bag-plus"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col pb-3">
+                <div class="p_card">
+                  <div class="card rounded-5 position-relative">
+                    <span
+                      class="badge rounded-pill text-bg-primary position-absolute ms-3 mt-3 top-0 start-0"
+                      dir="ltr"
+                      ><i class="bi bi-star-fill me-2"></i>
+                      <p>۰</p></span
+                    >
+                    <a
+                      href=""
+                      class="badge badge_cart text-bg-success fs-4 rounded-bottom-5 text-decoration-none position-absolute start-0 end-0 mx-auto"
+                    >
+                      مشاهده محصول</a
+                    >
+                    <img
+                      src="images/c1.jpg"
+                      class="card-img-top mt-3 rounded-5"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title text-end fw-bold mt-4">
+                        شارژر همراه شیائومی
+                      </h4>
+                      <p class="card-text text-end mt-2">
+                        مدل Redmi PB200LZM ظرفیت 20000 میلی آمپر ساعت
+                      </p>
+                      <div class="row mt-3 flex-column align-items-start">
+                        <div
+                          class="col d-flex justify-content-between align-items-center mt-2"
+                        >
+                          <p class="price"><span>۵۲۵,۰۰۰</span> تومان</p>
+                          <a href="#" class="btn btn_cart fs-3"
+                            ><span>اضافه به سبد خرید</span>
+                            <i class="bi bi-bag-plus"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col pb-3">
+                <div class="p_card">
+                  <div class="card rounded-5 position-relative">
+                    <span
+                      class="badge rounded-pill text-bg-primary position-absolute ms-3 mt-3 top-0 start-0"
+                      dir="ltr"
+                      ><i class="bi bi-star-fill me-2"></i>
+                      <p>۰</p></span
+                    >
+                    <a
+                      href=""
+                      class="badge badge_cart text-bg-success fs-4 rounded-bottom-5 text-decoration-none position-absolute start-0 end-0 mx-auto"
+                    >
+                      مشاهده محصول</a
+                    >
+                    <img
+                      src="images/c1.jpg"
+                      class="card-img-top mt-3 rounded-5"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title text-end fw-bold mt-4">
+                        شارژر همراه شیائومی
+                      </h4>
+                      <p class="card-text text-end mt-2">
+                        مدل Redmi PB200LZM ظرفیت 20000 میلی آمپر ساعت
+                      </p>
+                      <div class="row mt-3 flex-column align-items-start">
+                        <div
+                          class="col d-flex justify-content-between align-items-center mt-2"
+                        >
+                          <p class="price"><span>۵۲۵,۰۰۰</span> تومان</p>
+                          <a href="#" class="btn btn_cart fs-3"
+                            ><span>اضافه به سبد خرید</span>
+                            <i class="bi bi-bag-plus"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 pt-5 filter_page">
+          <div class="rounded-5 filter_menu mt-5">
+            <h3 class="pt-3">فیلتر محصولات</h3>
+            <div class="pt-3 pe-4">
+              <div class="form-check form-check-reverse form-switch">
+                <input
+                  class="form-check-input checkbox_color"
+                  type="checkbox"
+                  role="switch"
+                  id="flexSwitchCheckDefault"
+                />
+                <label class="form-check-label" for="flexSwitchCheckDefault"
+                  >فقط کالا‌های موجود</label
+                >
+              </div>
+              <div class="form-check form-check-reverse form-switch pt-2">
+                <input
+                  class="form-check-input checkbox_color"
+                  type="checkbox"
+                  role="switch"
+                  id="flexSwitchCheckDefault"
+                />
+                <label class="form-check-label" for="flexSwitchCheckDefault"
+                  >فقط کالا‌های تخفیف دار</label
+                >
+              </div>
+            </div>
+            <div class="center-line"></div>
+            <div class="pt-3">
+              <p class="text-end px-4">
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="toggleCheckbox"
+                  autocomplete="off"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseWidthExample"
+                  aria-expanded="false"
+                  aria-controls="collapseWidthExample"
+                />
+                <label
+                  class="btn btn-outline-danger w-100 d-flex justify-content-between align-items-center"
+                  for="toggleCheckbox"
+                >
+                  <span class="me-2 order-1">
+                    <i class="bi bi-chevron-compact-down"></i>
+                  </span>
+                  <span class="order-2 fs-4"> تولید کننده </span>
+                </label>
+              </p>
+              <div class="collaps_body">
+                <div
+                  class="collapse collapse-horizontal"
+                  id="collapseWidthExample"
+                >
+                  <div class="card card-body border-0">
+                    <div class="scroll-container overflow-auto">
+                      <!-- این والد با کلاس scroll-container افزوده شده است -->
+                      <div class="form-check form-check-reverse me-4">
+                        <input
+                          class="form-check-input checkbox_color"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckChecked"
+                        />
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Microsoft
+                        </label>
+                      </div>
+                      <div class="form-check form-check-reverse pt-3 me-4">
+                        <input
+                          class="form-check-input checkbox_color"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckChecked2"
+                        />
+                        <label class="form-check-label" for="flexCheckChecked2">
+                          Razer
+                        </label>
+                      </div>
+                      <!-- اضافه کردن چک باکس‌ها به این والد باعث می‌شود که اسکرول به درستی نمایش داده شود -->
+                      <!-- افزوده شدن چک باکس‌های بیشتر اینجا -->
+                      <div class="form-check form-check-reverse pt-3 me-4">
+                        <input
+                          class="form-check-input checkbox_color"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckChecked3"
+                        />
+                        <label class="form-check-label" for="flexCheckChecked3">
+                          Logitech
+                        </label>
+                      </div>
+                      <div class="form-check form-check-reverse pt-3 me-4">
+                        <input
+                          class="form-check-input checkbox_color"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckChecked4"
+                        />
+                        <label class="form-check-label" for="flexCheckChecked4">
+                          Onikuma
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ---- -->
+            <div class="pt-3">
+              <p class="text-end px-4">
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="toggleCheckbox2"
+                  autocomplete="off"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseWidthExample2"
+                  aria-expanded="false"
+                  aria-controls="collapseWidthExample2"
+                />
+                <label
+                  class="btn btn-outline-danger w-100 d-flex justify-content-between align-items-center"
+                  for="toggleCheckbox2"
+                >
+                  <span class="me-2 order-1">
+                    <i class="bi bi-chevron-compact-down"></i>
+                  </span>
+                  <span class="order-2 fs-4"> رنگ</span>
+                </label>
+              </p>
+              <div class="collaps_body">
+                <div
+                  class="collapse collapse-horizontal"
+                  id="collapseWidthExample2"
+                >
+                  <div class="card card-body border-0">
+                    <div class="scroll-container overflow-auto">
+                      <!-- این والد با کلاس scroll-container افزوده شده است -->
+                      <div class="form-check form-check-reverse me-4">
+                        <input
+                          class="form-check-input checkbox_color"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckChecked"
+                        />
+                        <label class="form-check-label" for="flexCheckChecked">
+                          سفید
+                        </label>
+                      </div>
+                      <div class="form-check form-check-reverse pt-3 me-4">
+                        <input
+                          class="form-check-input checkbox_color"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckChecked2"
+                        />
+                        <label class="form-check-label" for="flexCheckChecked2">
+                          سیاه
+                        </label>
+                      </div>
+                      <!-- اضافه کردن چک باکس‌ها به این والد باعث می‌شود که اسکرول به درستی نمایش داده شود -->
+                      <!-- افزوده شدن چک باکس‌های بیشتر اینجا -->
+                      <div class="form-check form-check-reverse pt-3 me-4">
+                        <input
+                          class="form-check-input checkbox_color"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckChecked3"
+                        />
+                        <label class="form-check-label" for="flexCheckChecked3">
+                          آبی
+                        </label>
+                      </div>
+                      <div class="form-check form-check-reverse pt-3 me-4">
+                        <input
+                          class="form-check-input checkbox_color"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckChecked4"
+                        />
+                        <label class="form-check-label" for="flexCheckChecked4">
+                          سبز
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="center-line"></div>
+            <!-- price_range_card -->
+            <div class="price_range_card pt-3">
+              <h4>محدوده قیمت</h4>
+              <div class="price-content rtl">
+                <div>
+                  <label for="" class="min">حداقل قیمت</label>
+                  <p class="min-value">100000 تومن</p>
+                </div>
+                <div>
+                  <label for="" class="max"> حدکثر قیمت</label>
+                  <p class="max-value">1000000000 تومن</p>
+                </div>
+              </div>
+              <div class="range-slider rtl">
+                <div class="range-fill"></div>
+                <input
+                  type="range"
+                  title="حداقل قیمت"
+                  label="حداقل قیمت"
+                  class="min-price Prange"
+                  value="100000"
+                  min="100000"
+                  max="1000000000"
+                  step="100"
+                />
+                <input
+                  type="range"
+                  title="حداکثر قیمت"
+                  label="حداکثر قیمت"
+                  class="max-price Prange"
+                  value="1000000000"
+                  min="100000"
+                  max="1000000000"
+                  step="100"
+                />
+              </div>
+              <button class="btn btn_cart fs-3 mb-4">اعمال فیلتر‌ قیمت</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer mt-5">
+      <div class="container text-center pt-3 footer_body" dir="rtl">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-xl-8 footer_links">
+            <div class="container">
+              <div class="row text-end fs-4 mt-3">
+                <div class="col-3">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 1</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 2</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 3</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 4</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-3">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 1</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 2</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 3</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 4</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-3">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 1</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 2</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 3</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 4</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-3">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 1</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 2</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 3</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 4</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-xl-4">
+            <h4 class="text-end">دانلود اپلیکیشن</h4>
+            <div
+              class="container text-center mt-4 .overflow-hidden download_section"
+            >
+              <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-5">
+                  <a href="#">
+                    <img src="/images/bazar-download.svg" alt="Download" />
+                  </a>
+                </div>
+                <div class="col-5">
+                  <a href="#">
+                    <img src="/images/sibche-download.svg" alt="Download" />
+                  </a>
+                </div>
+              </div>
+              <div
+                class="row d-flex justify-content-center align-items-center mt-3"
+              >
+                <div class="col-5">
+                  <a href="#">
+                    <img src="/images/sibapp-download.svg" alt="Download" />
+                  </a>
+                </div>
+                <div class="col-5">
+                  <a href="#">
+                    <img src="/images/pwa-download.svg" alt="Download" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-8 mt-3 footer_about_p1">
+            <p class="fs-3">
+              کلیه حقوق این سایت متعلق به <span>فروشگاه</span> است.
+            </p>
+          </div>
+          <div class="col mt-3 text-start footer_about_p2">
+            <p>طراحی و پیاده سازی</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+  <script src="js/main.js"></script>
+</html>

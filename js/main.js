@@ -136,7 +136,66 @@ function displayBadge() {
     });
   });
 }
+document.addEventListener("DOMContentLoaded", function () {
+  displayBadge();
+});
 
+function price_range(container) {
+  var minValue = container.querySelector(".min-value");
+  var maxValue = container.querySelector(".max-value");
+  const rangeFill = container.querySelector(".range-fill");
+
+  function validateRange() {
+    let minPrice = parseInt(inputElement[0].value);
+    let maxPrice = parseInt(inputElement[1].value);
+
+    if (minPrice > maxPrice) {
+      let temp = minPrice;
+      minPrice = maxPrice;
+      maxPrice = temp;
+    }
+
+    const minPercentage = ((minPrice - 100000) / (1000000000 - 100)) * 100;
+    const maxPercentage = ((maxPrice - 100000) / (1000000000 - 100)) * 100;
+
+    rangeFill.style.right = minPercentage + "%";
+    rangeFill.style.width = maxPercentage - minPercentage + "%";
+
+    minValue.innerHTML = minPrice + " تومان";
+    maxValue.innerHTML = maxPrice + " تومان";
+  }
+
+  const inputElement = container.querySelectorAll(".Prange");
+
+  inputElement.forEach((element) => {
+    element.addEventListener("input", validateRange);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const priceRangeCards = document.querySelectorAll(".price_range_card");
+
+  priceRangeCards.forEach((container) => {
+    price_range(container);
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const priceRangeCards = document.querySelectorAll(".price_range_card");
+
+  priceRangeCards.forEach((container) => {
+    price_range(container);
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Apply the price_range function to each instance of the HTML structure
+  const priceRangeCards = document.querySelectorAll(".price_range_card");
+
+  priceRangeCards.forEach((container) => {
+    price_range(container);
+  });
+});
 function updateCountdown() {
   var countdownElement = document.getElementById("countdown");
   var endDate = new Date("2023-12-31T23:59:59"); // Set your target end date and time
@@ -211,7 +270,6 @@ document.getElementById("scroll-right3").addEventListener("click", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  displayBadge();
   updateCountdown();
   setInterval(updateCountdown, 1000); // Update every second
 });
