@@ -1,139 +1,262 @@
 <div class="nav">
-    <div class="container text-center mt-2">
-      <div class="grid_container">
-        <!-- col1 -->
-        <div class=" mb-4 col1">
-          <a href="#">
-          <img src="/images/logo.webp" alt="logo" class="img-fluid img_logo" width="150px">
+  <div class="container nav_container text-center mt-2">
+    <div class="grid_container">
+      <!-- col1 -->
+      <div class="col1">
+        <a href="home.html">
+          <img
+            src="/images/logo.webp"
+            alt="logo"
+            class="img-fluid img_logo"
+            width="110px"
+          />
+        </a>
+      </div>
+      <!-- col2 -->
+      <div class="col2">
+        <div class="input--group mt-2">
+          <button class="btn_sape btn--accent" type="button">
+            <img
+              class="icon icon--search"
+              src="/images/search.svg"
+              alt="menu button"
+            />
+            جستجو
+          </button>
+          <input
+            type="text"
+            class="input"
+            placeholder="نام محصول مد نظر را وارد کنید"
+            aria-label="نام محصول مد نظر را وارد کنید"
+          />
+        </div>
+      </div>
+      <!-- col3 -->
+      <div class="col3">
+        <div class="float-start btns">
+          <a class="btn_sape btn--accent ms-2" type="button" href="login.html">
+            <img
+              class="icon icon--user"
+              src="/images/user.svg"
+              alt="menu button"
+            />
+            ورود و ثبت نام
+          </a>
+          <a class="btn_sape btn--accent ms-4" type="button" href="cart.html">
+            <img
+              class="icon icon--cart"
+              src="/images/cart.svg"
+              alt="menu button"
+            />
+            سبد خرید
           </a>
         </div>
-        <!-- col2 -->
-        <div class=" col2">
-          <div class="input--group mt-2">
-            <button class="btn_sape btn--accent" type="button">
-              <img class="icon icon--search" src="/images/search.svg" alt="menu button"></img>
-              جستجو
+      </div>
+      <!-- col4 -->
+      <div class="col4">
+        <nav
+          class="navbar navbar-expand-lg navbar-white float-end"
+          aria-label="Offcanvas navbar large"
+        >
+          <div class="container-fluid">
+            <button
+              class="btn_sape btn--accent navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <img
+                class="icon icon--menu"
+                src="/images/menu.svg"
+                alt="menu button"
+              />
+              منو
             </button>
-            <input 
-              type="text"
-              class="input"
-              placeholder="نام محصول مد نظر را وارد کنید"
-              aria-label="نام محصول مد نظر را وارد کنید"
-            />
-        </div>
-      </div>
-        <!-- col3 -->
-        <div class="col3">
-          <div class="float-start btns">
-          <button class="btn_sape btn--accent ms-2" type="button">
-            <img class="icon icon--user" src="/images/user.svg" alt="menu button"></img>
-            ورود و ثبت نام
-          </button>
-          <button class="btn_sape btn--accent ms-4" type="button">
-            <img class="icon icon--cart" src="/images/cart.svg" alt="menu button"></img>
-            سبد خرید
-          </button>
-        </div>
-        </div>
-        <!-- col4 -->
-        <div class="col4">
-          <nav class="navbar navbar-expand-lg navbar-white float-end" aria-label="Offcanvas navbar large">
-              <div class="container-fluid">
-                <button class="btn_sape btn--accent navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                  <img class="icon icon--menu" src="/images/menu.svg" alt="menu button"></img>
-                منو
-                </button>
-                <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                  <div class="offcanvas-header">
-                    <img src="/images/logo.webp" alt="logo" class="img-fluid offcanvas-title" width="100px" id="offcanvasNavbarLabel"> 
-                    <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                  </div>
-                  <div class="offcanvas-body ">
-                    <ul class="navbar-nav ml-auto float-end mt-5 text-end nav_items" >
-                      <li class="nav-item dropdown rtl">
-                        <button class="btn_Dropdown Dropdown_name" type="button" id="dropdown1">
-                          کامپیوتر و قطعات
-                        </button>
-                        <button type="button" class="btn_Dropdown dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                          <span class="visually-hidden">Toggle Dropdown</span>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-right D_menu1">
-                          <div class="dropdown_items">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                          </div>
-                      </ul>
-                      </li>
-      
-                      <li class="nav-item dropdown rtl">
-                        <button class="btn_Dropdown Dropdown_name" type="button">
-                          گوشی همراه و تجهیزات جانبی
-                        </button>
-                        <button type="button" class="btn_Dropdown dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                          <span class="visually-hidden">Toggle Dropdown</span>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-right D_menu2">
-                          <div class="dropdown_items">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                          </div>
-                      </ul>
-                      </li>
-      
-                      <li class="nav-item dropdown rtl">
-                        <button class="btn_Dropdown Dropdown_name" type="button">
-                          تجهیزات گیمینگ
-                        </button>
-                        <button type="button" class="btn_Dropdown dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                          <span class="visually-hidden">Toggle Dropdown</span>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-right  D_menu3">
-                          <div class="dropdown_items">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                          </div>
-                      </ul>
-                      </li>
-      
-                      <li class="nav-item dropdown rtl">
-                        <button class="btn_Dropdown Dropdown_name" type="button">
-                          لپ تاپ
-                        </button>
-                        <button type="button" class="btn_Dropdown dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                          <span class="visually-hidden">Toggle Dropdown</span>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-right  D_menu4">
-                          <div class="dropdown_items">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                          </div>
-                      </ul>
-                      </li>
-                        
-                        <li class="nav-item dropdown rtl">
-                          <button class="btn_Dropdown Dropdown_name" type="button">
-                            لوازم شبکه
-                          </button>
-                          <button type="button" class="btn_Dropdown dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span class="visually-hidden">Toggle Dropdown</span>
-                          </button>
-                          <ul class="dropdown-menu dropdown-menu-right  D_menu5">
-                            <div class="dropdown_items">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                            </div>
-                        </ul>
+            <div
+              class="offcanvas offcanvas-end text-bg-light"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <img
+                  src="/images/logo.webp"
+                  alt="logo"
+                  class="img-fluid offcanvas-title"
+                  width="100px"
+                  id="offcanvasNavbarLabel"
+                />
+                <button
+                  type="button"
+                  class="btn-close btn-close-black"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul
+                  class="navbar-nav ml-auto float-end mt-5 text-end nav_items"
+                >
+                  <li class="nav-item dropdown rtl">
+                    <button
+                      class="btn_Dropdown Dropdown_name"
+                      type="button"
+                      id="dropdown1"
+                    >
+                      کامپیوتر و قطعات
+                    </button>
+                    <button
+                      type="button"
+                      class="btn_Dropdown dropdown-toggle dropdown-toggle-split"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right D_menu1">
+                      <ul class="dropdown_items list-unstyled">
+                        <li>
+                          <a class="dropdown-item" href="products_page.html"
+                            >Action</a
+                          >
                         </li>
-                        
-                    </ul>
-                </div>
+                        <li>
+                          <a class="dropdown-item" href="products_page.html"
+                            >Another action</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="nav-item dropdown rtl">
+                    <button class="btn_Dropdown Dropdown_name" type="button">
+                      گوشی همراه و تجهیزات جانبی
+                    </button>
+                    <button
+                      type="button"
+                      class="btn_Dropdown dropdown-toggle dropdown-toggle-split"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right D_menu2">
+                      <ul class="dropdown_items list-unstyled">
+                        <li>
+                          <a class="dropdown-item" href="products_page.html"
+                            >Action</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="products_page.html"
+                            >Another action</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="products_page.html"
+                            >Action</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="products_page.html"
+                            >Another action</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="nav-item dropdown rtl">
+                    <button class="btn_Dropdown Dropdown_name" type="button">
+                      تجهیزات گیمینگ
+                    </button>
+                    <button
+                      type="button"
+                      class="btn_Dropdown dropdown-toggle dropdown-toggle-split"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right D_menu3">
+                      <ul class="dropdown_items list-unstyled">
+                        <li>
+                          <a class="dropdown-item" href="products_page.html"
+                            >Action</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="products_page.html"
+                            >Another action</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="nav-item dropdown rtl">
+                    <button class="btn_Dropdown Dropdown_name" type="button">
+                      لپ تاپ
+                    </button>
+                    <button
+                      type="button"
+                      class="btn_Dropdown dropdown-toggle dropdown-toggle-split"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right D_menu4">
+                      <ul class="dropdown_items list-unstyled">
+                        <li>
+                          <a class="dropdown-item" href="products_page.html"
+                            >Action</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="products_page.html"
+                            >Another action</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="nav-item dropdown rtl">
+                    <button class="btn_Dropdown Dropdown_name" type="button">
+                      لوازم شبکه
+                    </button>
+                    <button
+                      type="button"
+                      class="btn_Dropdown dropdown-toggle dropdown-toggle-split"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right D_menu5">
+                      <ul class="dropdown_items list-unstyled">
+                        <li>
+                          <a class="dropdown-item" href="products_page.html"
+                            >Action</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="products_page.html"
+                            >Another action</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
               </div>
-      
-                
-              </div>
-          </nav>
+            </div>
+          </div>
+        </nav>
       </div>
-      </div>  
+    </div>
   </div>
+</div>
