@@ -20,12 +20,12 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/cart_style.css" />
+
     <title>cart</title>
     <link rel="icon" href="/images/x-icon.webp" type="image/x-icon" />
   </head>
 
-  <body>
+  <body class="cart_body">
     <!-- navbar -->
     <div class="nav">
       <div class="container nav_container text-center mt-2">
@@ -44,7 +44,7 @@
           <!-- col2 -->
           <div class="col2">
             <div class="input--group mt-2">
-              <button class="btn_sape btn--accent" type="button">
+              <button class="btn_shape btn--accent" type="button">
                 <img
                   class="icon icon--search"
                   src="/images/search.svg"
@@ -64,7 +64,7 @@
           <div class="col3">
             <div class="float-start btns">
               <a
-                class="btn_sape btn--accent ms-2"
+                class="btn_shape btn--accent ms-2"
                 type="button"
                 href="login.html"
               >
@@ -76,7 +76,7 @@
                 ورود و ثبت نام
               </a>
               <a
-                class="btn_sape btn--accent ms-4"
+                class="btn_shape btn--accent ms-4"
                 type="button"
                 href="cart.html"
               >
@@ -97,7 +97,7 @@
             >
               <div class="container-fluid">
                 <button
-                  class="btn_sape btn--accent navbar-toggler"
+                  class="btn_shape btn--accent navbar-toggler"
                   type="button"
                   data-bs-toggle="offcanvas"
                   data-bs-target="#offcanvasNavbar"
@@ -371,7 +371,7 @@
                 <img
                   src="images/c1.jpg"
                   alt="image of product"
-                  class="product_img mx-lg-3"
+                  class="cart_product_img mx-lg-3"
                 />
               </div>
               <div class="col-4 col-lg-3">
@@ -483,16 +483,24 @@
 
             <div class="row mb-5 justify-content-center fs-1">
               <div class="col-2">
-                <a href="#"><i class="bi bi-instagram text-white"></i></a>
+                <a alt="bi-instagram" title="bi-instagram" href="#"
+                  ><i class="bi bi-instagram text-white"></i
+                ></a>
               </div>
               <div class="col-2">
-                <a href="#"><i class="bi bi-telegram text-white"></i></a>
+                <a alt="bi-telegram" title="bi-telegram" href="#"
+                  ><i class="bi bi-telegram text-white"></i
+                ></a>
               </div>
               <div class="col-2">
-                <a href="#"><i class="bi bi-twitter text-white"></i></a>
+                <a alt="bi-twitter" title="bi-twitter" href="#"
+                  ><i class="bi bi-twitter text-white"></i
+                ></a>
               </div>
               <div class="col-2">
-                <a href="#"><i class="bi bi-facebook text-white"></i></a>
+                <a alt="bi-facebook" title="bi-facebook" href="#"
+                  ><i class="bi bi-facebook text-white"></i
+                ></a>
               </div>
             </div>
             <p class="fs-2 mb-5">۰۲۱<span class="fs-1 ms-2">۴۰۰۸۱۴۴</span></p>
@@ -522,12 +530,18 @@
             <div class="row trust_section">
               <div class="col-4">
                 <a href="#"
-                  ><img src="/images/namad-1.png" alt="" class="security_img"
+                  ><img
+                    src="/images/namad-1.png"
+                    alt="namad-1.png"
+                    class="security_img"
                 /></a>
               </div>
               <div class="col-4">
                 <a href="#"
-                  ><img src="/images/namad-2.png" alt="" class="security_img"
+                  ><img
+                    src="/images/namad-2.png"
+                    alt="namad-2.png"
+                    class="security_img"
                 /></a>
               </div>
             </div>
@@ -535,7 +549,7 @@
           <div class="about_input">
             <h4 class="mt-3 fs-3">عضویت در <span>خبرنامه</span></h4>
             <div class="input--group mt-4" dir="ltr">
-              <button class="btn_sape btn--enter" type="button">ثبت</button>
+              <button class="btn_shape btn--enter" type="button">ثبت</button>
               <input
                 type="email"
                 class="input"
