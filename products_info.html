@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>products_info</title>
+    <link rel="icon" href="/images/x-icon.webp" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <div class="nav">
+      <div class="container nav_container text-center mt-2">
+        <div class="grid_container">
+          <!-- col1 -->
+          <div class="col1">
+            <a href="home.html">
+              <img
+                src="/images/logo.webp"
+                alt="logo"
+                class="img-fluid img_logo"
+                width="110px"
+              />
+            </a>
+          </div>
+          <!-- col2 -->
+          <div class="col2">
+            <div class="input--group mt-2">
+              <button class="btn_shape btn--accent" type="button">
+                <img
+                  class="icon icon--search"
+                  src="/images/search.svg"
+                  alt="menu button"
+                />
+                جستجو
+              </button>
+              <input
+                type="text"
+                class="input"
+                placeholder="نام محصول مد نظر را وارد کنید"
+                aria-label="نام محصول مد نظر را وارد کنید"
+              />
+            </div>
+          </div>
+          <!-- col3 -->
+          <div class="col3">
+            <div class="float-start btns">
+              <a
+                class="btn_shape btn--accent ms-2"
+                type="button"
+                href="login.html"
+              >
+                <img
+                  class="icon icon--user"
+                  src="/images/user.svg"
+                  alt="menu button"
+                />
+                ورود و ثبت نام
+              </a>
+              <a
+                class="btn_shape btn--accent ms-4"
+                type="button"
+                href="cart.html"
+              >
+                <img
+                  class="icon icon--cart"
+                  src="/images/cart.svg"
+                  alt="menu button"
+                />
+                سبد خرید
+              </a>
+            </div>
+          </div>
+          <!-- col4 -->
+          <div class="col4">
+            <nav
+              class="navbar navbar-expand-lg navbar-white float-end"
+              aria-label="Offcanvas navbar large"
+            >
+              <div class="container-fluid">
+                <button
+                  class="btn_shape btn--accent navbar-toggler"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                >
+                  <img
+                    class="icon icon--menu"
+                    src="/images/menu.svg"
+                    alt="menu button"
+                  />
+                  منو
+                </button>
+                <div
+                  class="offcanvas offcanvas-end text-bg-light"
+                  tabindex="-1"
+                  id="offcanvasNavbar"
+                  aria-labelledby="offcanvasNavbarLabel"
+                >
+                  <div class="offcanvas-header">
+                    <img
+                      src="/images/logo.webp"
+                      alt="logo"
+                      class="img-fluid offcanvas-title"
+                      width="100px"
+                      id="offcanvasNavbarLabel"
+                    />
+                    <button
+                      type="button"
+                      class="btn-close btn-close-black"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul
+                      class="navbar-nav ml-auto float-end mt-5 text-end nav_items"
+                    >
+                      <li class="nav-item dropdown rtl">
+                        <button
+                          class="btn_Dropdown Dropdown_name"
+                          type="button"
+                          id="dropdown1"
+                        >
+                          کامپیوتر و قطعات
+                        </button>
+                        <button
+                          type="button"
+                          class="btn_Dropdown dropdown-toggle dropdown-toggle-split"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right D_menu1">
+                          <ul class="dropdown_items list-unstyled">
+                            <li>
+                              <a class="dropdown-item" href="products_page.html"
+                                >Action</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="products_page.html"
+                                >Another action</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+
+                      <li class="nav-item dropdown rtl">
+                        <button
+                          class="btn_Dropdown Dropdown_name"
+                          type="button"
+                        >
+                          گوشی همراه و تجهیزات جانبی
+                        </button>
+                        <button
+                          type="button"
+                          class="btn_Dropdown dropdown-toggle dropdown-toggle-split"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right D_menu2">
+                          <ul class="dropdown_items list-unstyled">
+                            <li>
+                              <a class="dropdown-item" href="products_page.html"
+                                >Action</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="products_page.html"
+                                >Another action</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="products_page.html"
+                                >Action</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="products_page.html"
+                                >Another action</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+
+                      <li class="nav-item dropdown rtl">
+                        <button
+                          class="btn_Dropdown Dropdown_name"
+                          type="button"
+                        >
+                          تجهیزات گیمینگ
+                        </button>
+                        <button
+                          type="button"
+                          class="btn_Dropdown dropdown-toggle dropdown-toggle-split"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right D_menu3">
+                          <ul class="dropdown_items list-unstyled">
+                            <li>
+                              <a class="dropdown-item" href="products_page.html"
+                                >Action</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="products_page.html"
+                                >Another action</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+
+                      <li class="nav-item dropdown rtl">
+                        <button
+                          class="btn_Dropdown Dropdown_name"
+                          type="button"
+                        >
+                          لپ تاپ
+                        </button>
+                        <button
+                          type="button"
+                          class="btn_Dropdown dropdown-toggle dropdown-toggle-split"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right D_menu4">
+                          <ul class="dropdown_items list-unstyled">
+                            <li>
+                              <a class="dropdown-item" href="products_page.html"
+                                >Action</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="products_page.html"
+                                >Another action</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+
+                      <li class="nav-item dropdown rtl">
+                        <button
+                          class="btn_Dropdown Dropdown_name"
+                          type="button"
+                        >
+                          لوازم شبکه
+                        </button>
+                        <button
+                          type="button"
+                          class="btn_Dropdown dropdown-toggle dropdown-toggle-split"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right D_menu5">
+                          <ul class="dropdown_items list-unstyled">
+                            <li>
+                              <a class="dropdown-item" href="products_page.html"
+                                >Action</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="products_page.html"
+                                >Another action</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- products_info -->
+    <div class="container text-center product_info_page">
+      <div class="row address_links pt-3">
+        <div class="col text-end rtl d-flex">
+          <p class="main_link">
+            <a href="">فروشگاه اینترنتی IYALVER</a><span class="px-2">></span>
+          </p>
+          <p class="sec_link">
+            <a href=""> پاوربانک </a><span class="px-2">></span>
+          </p>
+          <p class="sec_link">
+            <a href=""
+              >شارژر همراه شیائومی مدل Redmi PB200LZM ظرفیت 20000 میلی آمپر
+              ساعت</a
+            >
+          </p>
+        </div>
+      </div>
+      <!-- main_pdge-->
+      <div class="row pt-3">
+        <div class="col-12 rtl pmain_row">
+          <div class="row">
+            <div class="col-12 col-xl-4">
+              <div class="row">
+                <div class="col-12">
+                  <div id="carouselExample" class="carousel slide pcarousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/c1.jpg" class="img-fluid" alt="..." />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/c2.jpg" class="img-fluid" alt="..." />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/c3.jpg" class="img-fluid" alt="..." />
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/c4.jpg" class="img-fluid" alt="..." />
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#carouselExample"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#carouselExample"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="text-end d-flex">
+                    <img
+                      src="images/c1.jpg"
+                      class="rounded float-end"
+                      width="100px"
+                      height="100px"
+                      alt="..."
+                    />
+                    <img
+                      src="images/c2.jpg"
+                      class="rounded float-end"
+                      width="100px"
+                      height="100px"
+                      alt="..."
+                    />
+                    <img
+                      src="images/c3.jpg"
+                      class="rounded float-end"
+                      width="100px"
+                      height="100px"
+                      alt="..."
+                    />
+                    <img
+                      src="images/c4.jpg"
+                      class="rounded float-end"
+                      width="100px"
+                      height="100px"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-xl-6 text-end pt-2 pt-xl-0 purchase_row">
+              <h3>
+                شارژر همراه شیائومی مدل Redmi PB200LZM ظرفیت 20000 میلی آمپر
+                ساعت
+              </h3>
+              <h4>
+                Xiaomi Redmi PB200LZM mobile charger with a capacity of 20000
+                mAh
+              </h4>
+              <div class="center-line"></div>
+              <div class="container text-end pt-3">
+                <div class="row">
+                  <div class="col-6 col-xl-3">
+                    <ul class="list-unstyled">
+                      <li>جنس</li>
+                      <li>رنگ</li>
+                      <li>ظرفیت</li>
+                      <li>اقلام همراه</li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <ul class="list-unstyled">
+                      <li>پلاستیک فشرده</li>
+                      <li>مشکی</li>
+                      <li>۳۰۰۰۰</li>
+                      <li>ندارد</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="center-line"></div>
+              <div class="container pt-3">
+                <div class="row">
+                  <div
+                    class="col-7 col-xl-6 d-flex align-items-center price_info"
+                  >
+                    <p class="ps-3">قیمت:</p>
+                    <p
+                      class="text-decoration-line-through text_line_through ps-3 me-0"
+                    >
+                      ۵۶۶,۰۰۰
+                    </p>
+                    <p class="ps-3 mprice">۵۲۵,۰۰۰</p>
+                    <p>تومان</p>
+                  </div>
+                  <div
+                    class="col-4 col-xl-6 col_number d-flex justify-content-center mb-3 mb-xl-0 mt-xl-2"
+                  >
+                    <div class="row mt-2">
+                      <div class="col">
+                        <p class="text-center pnumber">تعداد</p>
+                      </div>
+                      <div class="col">
+                        <button
+                          class="num_btns btn__add"
+                          id="add-product"
+                          aria-label="add product"
+                        >
+                          <i class="bi bi-plus-circle-fill"></i>
+                        </button>
+                      </div>
+                      <div class="col">
+                        <p class="numer fw-bold" id="number">۱</p>
+                      </div>
+                      <div class="col">
+                        <button
+                          class="num_btns btn__minus"
+                          id="minus-product"
+                          aria-label="minus product"
+                        >
+                          <i class="bi bi-dash-circle-fill"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="center-line"></div>
+              <div class="pt-4">
+                <a href="#" class="btn btn_cart fs-1">اضافه به سبد خرید </a>
+              </div>
+            </div>
+            <div class="col-2 pe-5 pt-4 pt-xl-0 general_info">
+              <div class="container d-flex flex-column justify-content-between">
+                <div class="row row_star">
+                  <!-- first row -->
+                  <div
+                    class="col d-flex fs-1 justify-content-center flex-row-reverse pe-5 pe-xl-0"
+                  >
+                    <p class="pe-2"><i class="bi bi-star"></i></p>
+                    <p class="pe-2"><i class="bi bi-star"></i></p>
+                    <p class="pe-2"><i class="bi bi-star"></i></p>
+                    <p class="pe-2"><i class="bi bi-star"></i></p>
+                    <p class="pe-2"><i class="bi bi-star"></i></p>
+                  </div>
+                </div>
+                <!-- second row -->
+                <div class="row d-none d-xl-block">
+                  <div class="col">
+                    <div class="row">
+                      <div class="col">
+                        <!-- c1 -->
+                        <div class="d-flex pb-4">
+                          <i class="bi bi-truck info_icon"></i>
+                          <div class="me-4 info_text">
+                            <h3 class="fw-bold">ارسال سفارش</h3>
+                            <p>در سریعترین زمان</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <!-- c2 -->
+                        <div class="d-flex pb-4">
+                          <i class="bi bi-credit-card-2-back info_icon"></i>
+                          <div class="me-4 info_text">
+                            <h3 class="fw-bold">پرداخت امن</h3>
+                            <p>از درگاه معتبر بانکی</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <!-- c3 -->
+                        <div class="d-flex">
+                          <i class="bi bi-arrow-clockwise info_icon"></i>
+                          <div class="me-4 info_text">
+                            <h3 class="fw-bold">۷ روز ضمانت</h3>
+                            <p>بازگشت محصول</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- info -->
+        <div class="col-12 rtl pt-5 pb-5">
+          <div class="d-xl-flex align-items-start">
+            <!-- ---- -->
+            <ul
+              class="nav nav-pills mb-3 info_sections"
+              id="pills-tab"
+              role="tablist"
+            >
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="v-pills-home-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-home"
+                  aria-selected="true"
+                >
+                  توضیحات
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="v-pills-profile-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-profile"
+                  aria-selected="false"
+                >
+                  مشخصات فنی
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="v-pills-messages-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-messages"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-messages"
+                  aria-selected="false"
+                >
+                  نظرات
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="v-pills-settings-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-settings"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-settings"
+                  aria-selected="false"
+                >
+                  پرسش و پاسخ
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content info_content" id="v-pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="v-pills-home"
+                role="tabpanel"
+                aria-labelledby="v-pills-home-tab"
+                tabindex="0"
+              >
+                <div class="text-end">
+                  <h3>نقد و بررسی اجمالی</h3>
+                  <p class="text-justify">
+                    پاور بانک 20000 Redmi مدل PB200LZM ساخت شرکت شیائومی
+                    (xiaomi) است. این پاور بانک یک وسیله جانبی پرکاربرد است که
+                    نگرانی تمام شدن باتری گوشی‌های هوشمند را از بین برده است.
+                    این دستگاه توانایی 4.8 مرتبه شارژ Iphone XS را دارد. Redmi
+                    20000 با داشتن دوپورت خروجی USB و پشتیبانی از انواع
+                    پروتکل‌های شارژ سریع، بهترین همراه شما در خارج از منزل، محل
+                    کار و یا هنگام سفر خواهد بود. این محصول با استفاده از سیستم
+                    شارژ هوشمند به راحتی می‌تواند به طور همزمان دو دیوایس شما را
+                    شارژ کند، شارژ هوشمند ورودی مناسب را برای هر دیوایس در نظر
+                    خواهد گرفت. این محصول با ابعاد 7 × 15 سانتی‌متر سبک، راحت و
+                    قابل‌حمل است و به راحتی می‌توانید انواع دیوایس‌های خود مانند
+                    گوشی‌های هوشمند، دوربین، تبلت و غیره را در طول روز شارژ
+                    کنید. پاور بانک همراه شیائومی دارای سیستم محافظت در برابر
+                    مشکلاتی مانند نوسانات برق، اتصال کوتاه، تغییرات دما، اضافه
+                    جریان در ورودی و خروجی و غیره است. این پاور بانک از پورت
+                    خروجی دوگانه USB_A و پورت ورودی دوگانه USB-C و MicroUSB
+                    برخوردار است. همچنین حداکثر میزان قدرت برای پورت ورودی 5V
+                    _2.1A و پورت خروجی آن 5.1V_3.6A است. این دستگاه دارای دو
+                    درگاه ورودی MicroUSB – TypeC برای شارژ است و قابلیت سازگاری
+                    با تمامی گجت های هوشمند شما را دارد. در مجموع این پاور بانک
+                    با توانایی چندین بار شارژ گوشی‌های هوشمند، می‌تواند یک
+                    انتخاب مناسب برای استفاده روزمره باشد.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-profile"
+                role="tabpanel"
+                aria-labelledby="v-pills-profile-tab"
+                tabindex="0"
+              >
+                <div class="container text-end">
+                  <h3>مشخصات کلی</h3>
+                  <div class="row specifications w-75 pt-4">
+                    <div class="col-6 col-xl-3">
+                      <ul class="list-unstyled listname">
+                        <li class="mb-3">جنس</li>
+                        <li class="mb-3">رنگ</li>
+                        <li class="mb-3">ظرفیت</li>
+                        <li class="mb-3">اقلام همراه</li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <ul class="list-unstyled lsitinfo bor">
+                        <li class="mb-3 pe-4">پلاستیک فشرده</li>
+                        <li class="mb-2 pe-4">مشکی</li>
+                        <li class="mb-3 pe-4">۳۰۰۰۰</li>
+                        <li class="mb-3 pe-4">ندارد</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-messages"
+                role="tabpanel"
+                aria-labelledby="v-pills-messages-tab"
+                tabindex="0"
+              >
+                <div class="text-end">
+                  <h3>امتیاز محصول</h3>
+                  <p>
+                    <i class="bi bi-columns-gap ps-2"></i>از مجموع
+                    <span>۰</span>دیدگاه
+                  </p>
+                  <div class="container text-center pt-3">
+                    <div class="row row-cols-1 row-cols-lg-3">
+                      <div class="col">
+                        <div
+                          class="Score_range d-flex justify-content-between rtl"
+                        >
+                          <label for="" class="max ps-3 flex-grow-1">جنس</label>
+                          <div class="Score_range-slider w-50">
+                            <div class="range-half"></div>
+                            <input
+                              type="range"
+                              title="جنس"
+                              label="جنس"
+                              class="srange"
+                              value="50"
+                              min="1"
+                              max="100"
+                              step="10"
+                              disabled
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div
+                          class="Score_range d-flex justify-content-between rtl"
+                        >
+                          <label for="" class="max ps-3 flex-grow-1"
+                            >بدنه</label
+                          >
+                          <div class="Score_range-slider w-50 text-start">
+                            <div class="range-half"></div>
+                            <input
+                              type="range"
+                              title="بدنه"
+                              label="بدنه"
+                              class="srange"
+                              value="50"
+                              min="1"
+                              max="100"
+                              step="10"
+                              disabled
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div
+                          class="Score_range d-flex justify-content-between rtl"
+                        >
+                          <label for="" class="max ps-3 flex-grow-1"
+                            >کارایی</label
+                          >
+                          <div class="Score_range-slider w-50">
+                            <div class="range-half"></div>
+                            <input
+                              type="range"
+                              title="کارایی"
+                              label="کارایی"
+                              class="srange"
+                              value="50"
+                              min="1"
+                              max="100"
+                              step="10"
+                              disabled
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div
+                          class="Score_range d-flex justify-content-between rtl"
+                        >
+                          <label for="" class="max ps-3 flex-grow-1"
+                            >کیفیت</label
+                          >
+                          <div class="Score_range-slider w-50">
+                            <div class="range-half"></div>
+                            <input
+                              type="range"
+                              title="کیفیت"
+                              label="کیفیت"
+                              class="srange"
+                              value="50"
+                              min="1"
+                              max="100"
+                              step="10"
+                              disabled
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div
+                          class="Score_range d-flex justify-content-between rtl"
+                        >
+                          <label for="" class="max ps-3 flex-grow-1"
+                            >مقاومت</label
+                          >
+                          <div class="Score_range-slider w-50">
+                            <div class="range-half"></div>
+                            <input
+                              type="range"
+                              title="مقاومت"
+                              label="مقاومت"
+                              class="srange"
+                              value="50"
+                              min="1"
+                              max="100"
+                              step="10"
+                              disabled
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="not_score_info">
+                  <p class="fs-4">
+                    دیدگاهی یافت نشد ، اولین نفری باشید که برای شارژر همراه
+                    شیائومی مدل Redmi PB200LZM ظرفیت 20000 میلی آمپر ساعت دیدگاه
+                    ثبت میکند
+                  </p>
+                </div>
+                <div class="pt-5">
+                  <h3 class="text-end">نظرات کاربران</h3>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12 col-xl-6">
+                        <div class="login_input--group mt-4 w-75">
+                          <input
+                            type="email"
+                            class="input input_login"
+                            placeholder="نام کاربری یا آدرس ایمیل"
+                            aria-label="نام کاربری یا آدرس ایمیل"
+                          />
+                        </div>
+                        <div class="login_input--group mt-4 w-100">
+                          <textarea
+                            type="text"
+                            placeholder="پرسش شما"
+                            aria-label="پرسش شما"
+                            class="input input_login input_sec"
+                          ></textarea>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="row row-cols-1 pt-5 pt-xl-0">
+                          <div class="col-10 col-xl-12 sRangeCards">
+                            <div
+                              class="Score_range d-flex justify-content-between rtl"
+                            >
+                              <label for="" class="max ps-3 flex-grow-1"
+                                >جنس</label
+                              >
+                              <div class="Score_range-slider w-50">
+                                <div class="range-half range-half_active"></div>
+                                <input
+                                  type="range"
+                                  title="جنس"
+                                  label="جنس"
+                                  class="srange srange_active"
+                                  value="50"
+                                  min="1"
+                                  max="100"
+                                  step="10"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-10 col-xl-12 sRangeCards">
+                            <div
+                              class="Score_range d-flex justify-content-between rtl"
+                            >
+                              <label for="" class="max ps-3 flex-grow-1"
+                                >بدنه</label
+                              >
+                              <div class="Score_range-slider w-50">
+                                <div class="range-half range-half_active"></div>
+                                <input
+                                  type="range"
+                                  title="بدنه"
+                                  label="بدنه"
+                                  class="srange srange_active"
+                                  value="50"
+                                  min="1"
+                                  max="100"
+                                  step="10"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-10 col-xl-12 sRangeCards">
+                            <div
+                              class="Score_range d-flex justify-content-between rtl"
+                            >
+                              <label for="" class="max ps-3 flex-grow-1"
+                                >کارایی</label
+                              >
+                              <div class="Score_range-slider w-50">
+                                <div class="range-half range-half_active"></div>
+                                <input
+                                  type="range"
+                                  title="کارایی"
+                                  label="کارایی"
+                                  class="srange srange_active"
+                                  value="50"
+                                  min="1"
+                                  max="100"
+                                  step="10"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-10 col-xl-12 sRangeCards">
+                            <div
+                              class="Score_range d-flex justify-content-between rtl"
+                            >
+                              <label for="" class="max ps-3 flex-grow-1"
+                                >کیفیت</label
+                              >
+                              <div class="Score_range-slider w-50">
+                                <div class="range-half range-half_active"></div>
+                                <input
+                                  type="range"
+                                  title="کیفیت"
+                                  label="کیفیت"
+                                  class="srange srange_active"
+                                  value="50"
+                                  min="1"
+                                  max="100"
+                                  step="10"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-10 col-xl-12 sRangeCards">
+                            <div
+                              class="Score_range d-flex justify-content-between rtl"
+                            >
+                              <label for="" class="max ps-3 flex-grow-1"
+                                >مقاومت</label
+                              >
+                              <div class="Score_range-slider w-50">
+                                <div class="range-half range-half_active"></div>
+                                <input
+                                  type="range"
+                                  title="مقاومت"
+                                  label="مقاومت"
+                                  class="srange srange_active"
+                                  value="50"
+                                  min="1"
+                                  max="100"
+                                  step="10"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" class="btn btn_cart fs-1 w-50"
+                          >ارسال نظر
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-settings"
+                role="tabpanel"
+                aria-labelledby="v-pills-settings-tab"
+                tabindex="0"
+              >
+                <div class="not_score_info">
+                  <p class="fs-4">
+                    پرسشی یافت نشد ، اولین نفری باشید که برای شارژر همراه
+                    شیائومی مدل Redmi PB200LZM ظرفیت 20000 میلی آمپر ساعت پرسش
+                    ثبت میکند
+                  </p>
+                </div>
+                <div class="pt-5">
+                  <h3 class="text-end">پرسش‌‌های کاربران</h3>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12 col-xl-6">
+                        <div class="login_input--group mt-4 w-75">
+                          <input
+                            type="email"
+                            class="input input_login"
+                            placeholder="نام کاربری یا آدرس ایمیل"
+                            aria-label="نام کاربری یا آدرس ایمیل"
+                          />
+                        </div>
+                        <div class="login_input--group mt-4 w-100 flex-wrap">
+                          <textarea
+                            type="text"
+                            placeholder="پرسش شما"
+                            aria-label="پرسش شما"
+                            class="input input_login input_sec"
+                          ></textarea>
+                        </div>
+                      </div>
+                      <div class="col pt-5 pt-xl-0">
+                        <a href="#" class="btn btn_cart fs-1 w-50"
+                          >ارسال پرسش
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- about us -->
+    <div class="container text-center mt-3">
+      <div class="row" dir="rtl">
+        <div class="col d-flex flex-column">
+          <div class="social">
+            <a href="#">
+              <div class="about_logo">
+                <img
+                  src="images/logo.webp"
+                  alt="logo"
+                  class="img-fluid"
+                  width="100px"
+                />
+              </div>
+            </a>
+
+            <div class="row mb-5 justify-content-center fs-1">
+              <div class="col-2">
+                <a href="#"><i class="bi bi-instagram text-white"></i></a>
+              </div>
+              <div class="col-2">
+                <a href="#"><i class="bi bi-telegram text-white"></i></a>
+              </div>
+              <div class="col-2">
+                <a href="#"><i class="bi bi-twitter text-white"></i></a>
+              </div>
+              <div class="col-2">
+                <a href="#"><i class="bi bi-facebook text-white"></i></a>
+              </div>
+            </div>
+            <p class="fs-2 mb-5">۰۲۱<span class="fs-1 ms-2">۴۰۰۸۱۴۴</span></p>
+            <p class="fs-3 mb-2">info@Sitename.com</p>
+            <p class="fs-3 mb-5">تهران، اشرفی اصفهانی، جلال آل احمد</p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 text-end mx-5 about_text">
+          <h3>درباره<span> فروشگاه</span></h3>
+          <p class="Separating_line">______</p>
+          <p class="about_text_body fs-4">
+            فروشگاه اینترنتی فعالیت خود را از سال ۱۳۹۸ در زمینه فروش کیف پول های
+            سخت افزاری شروع نموده است . این مجموعه کالا های خود را بدون واسطه و
+            از طریق شرکت های اصلی سازنده کیف پول های سخت افزاری به صورت مستقیم
+            تامین می کند و همچنین ضمانت اصالت و سلامت کالا را به تمام مشتریان
+            ارائه می دهد. هدف اصلی ما در مجموعه تهران ولت در تمام این مدت تا به
+            امروز این بوده است که شما عزیزان را برای خریدی بهتر به درستی
+            راهنمایی کنیم تا در دنیای زیبای ارز های دیجیتال با خیالی آسوده ارز
+            های خود را به صورت کاملا امن نگهداری کنید.
+          </p>
+        </div>
+        <div class="col mx-5 mx-md-0 text-end pb-3">
+          <h3>نماد اعتماد</h3>
+          <p class="opacity-75">راه های اعتماد به فروشگاه</p>
+          <p class="Separating_line">______</p>
+          <div class="d-flex justify-content-center">
+            <div class="row trust_section">
+              <div class="col-4">
+                <a href="#"
+                  ><img src="/images/namad-1.png" alt="" class="security_img"
+                /></a>
+              </div>
+              <div class="col-4">
+                <a href="#"
+                  ><img src="/images/namad-2.png" alt="" class="security_img"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="about_input">
+            <h4 class="mt-3 fs-3">عضویت در <span>خبرنامه</span></h4>
+            <div class="input--group mt-4" dir="ltr">
+              <button class="btn_shape btn--enter" type="button">ثبت</button>
+              <input
+                type="email"
+                class="input"
+                placeholder="ایمیل شما"
+                aria-label="ایمیل شما"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer mt-5">
+      <div class="container text-center pt-3 footer_body" dir="rtl">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-xl-8 footer_links">
+            <div class="container">
+              <div class="row text-end fs-4 mt-3">
+                <div class="col-3">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 1</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 2</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 3</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 4</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-3">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 1</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 2</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 3</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 4</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-3">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 1</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 2</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 3</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 4</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-3">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 1</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 2</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 3</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="text-decoration-none text-dark"
+                        >op 4</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-xl-4">
+            <h4 class="text-end">دانلود اپلیکیشن</h4>
+            <div
+              class="container text-center mt-4 .overflow-hidden download_section"
+            >
+              <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-5">
+                  <a href="#">
+                    <img src="/images/bazar-download.svg" alt="Download" />
+                  </a>
+                </div>
+                <div class="col-5">
+                  <a href="#">
+                    <img src="/images/sibche-download.svg" alt="Download" />
+                  </a>
+                </div>
+              </div>
+              <div
+                class="row d-flex justify-content-center align-items-center mt-3"
+              >
+                <div class="col-5">
+                  <a href="#">
+                    <img src="/images/sibapp-download.svg" alt="Download" />
+                  </a>
+                </div>
+                <div class="col-5">
+                  <a href="#">
+                    <img src="/images/pwa-download.svg" alt="Download" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-8 mt-3 footer_about_p1">
+            <p class="fs-3">
+              کلیه حقوق این سایت متعلق به <span>فروشگاه</span> است.
+            </p>
+          </div>
+          <div class="col mt-3 text-start footer_about_p2">
+            <p>طراحی و پیاده سازی</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+  <script src="js/main.js"></script>
+</html>

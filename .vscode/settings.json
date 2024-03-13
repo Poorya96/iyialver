@@ -4,7 +4,7 @@
     "titleBar.activeBackground": "#22425E",
     "titleBar.activeForeground": "#FAFCFD"
   },
-  "liveServer.settings.port": 5834,
+  "liveServer.settings.port": 5889,
   "console-ninja.toolsToEnableSupportAutomaticallyFor": {
     "live-server-extension": true,
     "live-preview-extension": true

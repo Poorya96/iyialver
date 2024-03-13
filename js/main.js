@@ -180,22 +180,31 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const priceRangeCards = document.querySelectorAll(".price_range_card");
+function srange_range(container) {
+  const rangeFill = container.querySelector(".range-half_active");
 
-  priceRangeCards.forEach((container) => {
-    price_range(container);
+  function validateRange() {
+    let minPrice = parseInt(inputElement[0].value);
+
+    rangeFill.style.left = 0 + "%";
+    rangeFill.style.width = 100 - minPrice + "%";
+  }
+
+  const inputElement = container.querySelectorAll(".srange_active");
+
+  inputElement.forEach((element) => {
+    element.addEventListener("input", validateRange);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const sRangeCards = document.querySelectorAll(".sRangeCards");
+
+  sRangeCards.forEach((container) => {
+    srange_range(container);
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  // Apply the price_range function to each instance of the HTML structure
-  const priceRangeCards = document.querySelectorAll(".price_range_card");
-
-  priceRangeCards.forEach((container) => {
-    price_range(container);
-  });
-});
 function updateCountdown() {
   var countdownElement = document.getElementById("countdown");
   var endDate = new Date("2023-12-31T23:59:59"); // Set your target end date and time
